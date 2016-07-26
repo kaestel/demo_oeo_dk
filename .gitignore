@@ -1,0 +1,4 @@
+.DS_Store
+src/library/log/*
+src/library/public/*
+src/config/connect_*.php
