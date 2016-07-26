@@ -1,0 +1,15 @@
+#content {margin: 0 auto;}
+#content * {color: #d2d2d2;}
+#content .scene {position: absolute; top: 90px; left: 0;}
+#content .scene.built {background: #ebebeb;}
+
+#content .scene div.fullstop {margin: 0 auto; padding: 60px 0;}
+#content .scene div.fullstop svg {width: 15px; height: 15px;}
+#content .scene div.fullstop svg circle {stroke: #d2d2d2;}
+
+#content .scene div.newsletter,
+#content .scene div.social,
+#content .scene div.offices {
+	-webkit-transform: translate3d(0, 0, 0);
+}
+

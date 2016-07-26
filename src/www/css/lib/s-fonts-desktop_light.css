@@ -1,0 +1,20 @@
+@font-face {
+	font-family: 'Nationale DemiBold';
+	src: url('/css/fonts/Nationale-DemiBold.eot');
+	src: url('/css/fonts/Nationale-DemiBold.eot?#iefix') format('embedded-opentype'),
+		 url('/css/fonts/Nationale-DemiBold.woff') format('woff'),
+		 url('/css/fonts/Nationale-DemiBold.ttf') format('truetype'),
+		 url('/css/fonts/Nationale-DemiBold.svg#f474d1189e72373340fe5bad92cb7394') format('svg');
+	font-weight: normal;
+	font-style: 400;
+}
+@font-face {
+	font-family: 'Nationale Regular';
+	src: url('/css/fonts/Nationale-Regular.eot');
+	src: url('/css/fonts/Nationale-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('/css/fonts/Nationale-Regular.woff') format('woff'),
+		 url('/css/fonts/Nationale-Regular.ttf') format('truetype'),
+		 url('/css/fonts/Nationale-Regular.svg#2322dcd60970b145ddd0fffb7e508234') format('svg');
+	font-weight: normal;
+	font-style: 400;
+}

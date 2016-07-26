@@ -1,0 +1,14 @@
+#header {position: fixed; z-index: 20;
+	background: #ffffff;
+}
+#header .servicenavigation {display: none;}	
+
+#navigation {display: none;}
+/*#navigation {font-size: 0; white-space: nowrap;}
+#navigation ul {font-size: 0; white-space: nowrap; text-align: center;}
+#navigation li {width: 192px; padding: 10px 0; display: inline-block; vertical-align: top;}*/
+
+
+#logo {position: absolute; top: 80px; left: 50%; margin-left: -50px; width: 100px; height: 100px;
+	background-repeat: no-repeat; background-size: 100px 100px; background-image: url("/img/logo.svg");
+}

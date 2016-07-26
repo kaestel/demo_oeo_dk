@@ -1,0 +1,26 @@
+@font-face {
+	font-family: 'Nationale';
+	src: url('/css/fonts/Nationale-DemiBold.woff') format('woff'),
+		 url('/css/fonts/Nationale-DemiBold.ttf') format('truetype'),
+		 url('/css/fonts/Nationale-DemiBold.svg#f474d1189e72373340fe5bad92cb7394') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Nationale';
+	src: url('/css/fonts/Nationale-Regular.woff') format('woff'),
+		 url('/css/fonts/Nationale-Regular.ttf') format('truetype'),
+		 url('/css/fonts/Nationale-Regular.svg#2322dcd60970b145ddd0fffb7e508234') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Primo Serif';
+	src: url('/css/fonts/Primo-Serif.woff') format('woff'),
+		 url('/css/fonts/Primo-Serif.ttf') format('truetype'),
+		 url('/css/fonts/Primo-Serif.svg#4d459687cee49daadabad67f0650a7f8') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}

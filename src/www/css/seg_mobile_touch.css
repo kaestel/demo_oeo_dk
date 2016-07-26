@@ -1,0 +1,164 @@
+
+/*seg_mobile_touch_include.css*/
+
+/*s-fonts.css*/
+@font-face {
+	font-family: 'Nationale';
+	src: url('/css/fonts/Nationale-DemiBold.woff') format('woff'),
+		 url('/css/fonts/Nationale-DemiBold.ttf') format('truetype'),
+		 url('/css/fonts/Nationale-DemiBold.svg#f474d1189e72373340fe5bad92cb7394') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Nationale';
+	src: url('/css/fonts/Nationale-Regular.woff') format('woff'),
+		 url('/css/fonts/Nationale-Regular.ttf') format('truetype'),
+		 url('/css/fonts/Nationale-Regular.svg#2322dcd60970b145ddd0fffb7e508234') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Primo Serif';
+	src: url('/css/fonts/Primo-Serif.woff') format('woff'),
+		 url('/css/fonts/Primo-Serif.ttf') format('truetype'),
+		 url('/css/fonts/Primo-Serif.svg#4d459687cee49daadabad67f0650a7f8') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+/*s-page-mobile_touch.css*/
+* {font-family: Arial, sans-serif; color: #14372d;
+	-webkit-text-size-adjust: none;
+	-webkit-font-smoothing: antialiased;
+}
+html {}
+body {background: #ebebeb; margin: 0; overflow-y: scroll; overflow-x: hidden; text-align: center;}
+h1, h2, h3, h4, h5, h6, p, ul, li, dl, dd, dt {padding: 0; margin: 0;}
+h1, h2, h3, h4, h5, h6, p, li, dd, dt, span, a {line-height: 1em; font-weight: normal;}
+ul {list-style: none;}
+a {text-decoration: none; cursor: pointer;}
+a:hover {}
+img {border: 0; display: block;}
+form, fieldset, label, input, select, textarea {padding: 0; margin: 0; font-weight: normal;}
+fieldset {border: none;}
+input, select, textarea {font-size: 14px;}
+input, textarea {outline: none; border-radius: 0;
+	-webkit-appearance: none;
+}
+#page {position: relative; padding:0 10px;}
+a, span {font-size: inherit; font-family: inherit; color: inherit; text-transform: inherit; font-weight: inherit;}
+h1 {font-size: 18px; font-weight: 400; text-transform: uppercase;
+	font-family: "Primo Serif", Times, serif;
+}
+h2 {font-size: 22px; line-height: 1.25em; padding-bottom: 7px; padding-top: 7px;
+}
+h3 {font-size: 22px;
+	font-family: "Nationale", Arial, sans-serif;
+}
+h4 {font-size: 13px;
+	font-family: "Nationale", Arial, sans-serif;
+}
+h5 {}
+h6 {}
+p {font-size: 14px; line-height: 1.38em; padding: 0 0 20px;
+	font-family: "Nationale", Arial, sans-serif;
+} 
+ul {font-size: 0;}
+li {
+	font-size: 13px;
+}
+dl {font-size: 0;} 
+dd, 
+dt {
+	text-transform: uppercase; color: #666666;
+	font-size: 13px;
+}
+
+
+/*s-footer-mobile_touch.css*/
+#footer {}
+#content div.newsletter {padding: 70px 0 70px; margin: 0 auto; border-top: 1px solid #0a2d26;}
+#content div.newsletter h4 {padding: 0 0 30px; font-size: 22px; text-transform:uppercase; font-family: "Primo Serif", Times, serif; color: #0a2d26;}
+#content div.newsletter form {width:100%; margin: 0 auto; font-size: 0; border:1px solid #0a2d26;}
+#content div.newsletter form .field {width:100%; display: inline-block; vertical-align: top;}
+#content div.newsletter form .field label {display: none;}
+#content div.newsletter form .field div.help {display: none;}
+#content div.newsletter form fieldset {font-size: 0; text-align: center;}
+#content div.newsletter form input {border:none; width:80%; padding:17px 0 13px; background: #ebebeb; font-size:12px; text-transform: uppercase; color: #0a2d26; text-align: center;}
+#content div.newsletter form input[type="text"] {border-top: 1px solid #0a2d26;}
+#content div.newsletter form ul {width: 100%; display: inline-block; vertical-align: top;}
+#content div.newsletter form ul li input[type="submit"] {background: #0a2d26; border:none; width: 100%; padding:17px 0 13px; color: #ffffff; font-size: 12px; cursor: pointer;}
+#content div.newsletter .receipt h2 {font-size: 18px; margin-top: -37px;
+	font-family: "Nationale", Arial, sans-serif;
+}
+#content div.social {display: none;}
+#content div.sharing {padding: 0 0 70px; width: 100%; margin: 0 auto; }
+#content div.sharing h4 {padding: 0 0 30px; font-size: 22px; text-transform:uppercase; font-family: "Primo Serif", Times, serif; color: #14372d;}
+#content div.sharing ul.sharing {text-align: center;}
+#content div.sharing ul.sharing li {display: inline-block; vertical-align: top; width:100%; margin-bottom:10px; padding: 17px 0 13px; cursor: pointer;
+	border:1px solid #14372d; text-transform: uppercase; font-size:12px;
+	-webkit-transition: all 0.15s ease-in;
+	-moz-transition: all 0.15s ease-in;
+	-o-transition: all 0.15s ease-in;
+	transition: all 0.15s ease-in;
+}
+#content div.sharing ul.sharing li.facebook {background-position: 128px 20px;}
+#content div.sharing ul.sharing li.instagram {background-position: 132px 20px;}
+#content div.sharing ul.sharing li.twitter {background-position: 120px 20px;}
+#content div.sharing ul.sharing li:active {background-color: #14372d; color:#ffffff;
+	-webkit-transform: scale(0.98, 0.98);
+	-moz-transform: scale(0.98, 0.98);
+	-o-transform: scale(0.98, 0.98);
+	transform: scale(0.98, 0.98);
+}
+#content div.offices {width: 100%; padding: 0 0 10px; border-bottom: 1px solid #14372d;}
+#content div.offices ul.offices {font-size: 0;}
+#content div.offices ul.offices * {color: #ebebeb}
+#content div.offices ul.offices > li {width:100%; display: inline-block; vertical-align: top; background-color: #14372d; padding-bottom:40px;}
+#content div.offices ul.offices > li img {width: 100%;}
+#content div.offices ul.offices > li h4 {padding: 60px 0 30px; font-size: 22px; text-transform:uppercase; font-family: "Primo Serif", Times, serif; color: #ffffff;}
+#content div.offices ul.offices li ul {padding-bottom:20px;}
+#content div.offices ul.offices li ul li {padding-bottom:4px;}
+#content div.offices ul.offices li dl {padding-bottom:20px;}
+#content div.offices ul.offices li dl dt {display: none;}
+#content div.offices ul.offices li dl dd {text-transform: none; padding-bottom:6px;}
+#content div.offices ul.offices li dl dd.email {font-weight: 700;}
+#content div.offices ul.offices li dl dd.email a:active {color:blue;}
+#content div.offices ul.offices li .map {}
+#content div.offices ul.offices li .map h5 {font-family: "Nationale", Times, serif; font-size:12px; font-weight: 700;}
+#content div.offices ul.offices li .map h5 a:active {color:blue;}
+#content div.offices ul.offices li .map dl {display: none;}
+
+
+/*s-header-mobile_touch.css*/
+#header {position: fixed; z-index: 20;
+	background: #ffffff;
+}
+#header .servicenavigation {display: none;}	
+#navigation {display: none;}
+#logo {position: absolute; top: 80px; left: 50%; margin-left: -50px; width: 100px; height: 100px;
+	background-repeat: no-repeat; background-size: 100px 100px; background-image: url("/img/logo.svg");
+}
+
+/*s-front-mobile_touch.css*/
+#content .scene.front {}
+#content .scene.front a.desktop {display:block; text-align: center; padding: 17px 0 13px; margin-bottom:120px; background-color: #14372d; color:#ffffff; border:1px solid #14372d; text-transform: uppercase; font-size:12px;
+	-webkit-transition: all 0.15s ease-in;
+	-moz-transition: all 0.15s ease-in;
+	-o-transition: all 0.15s ease-in;
+	transition: all 0.15s ease-in;
+}
+#content .scene.front a.desktop:active {background-color: transparent; color:#14372d;
+	-webkit-transform: scale(0.98, 0.98);
+	-moz-transform: scale(0.98, 0.98);
+	-o-transform: scale(0.98, 0.98);
+	transform: scale(0.98, 0.98);
+}
+#content .scene.front .image {position:relative;}
+#content .scene.front .image img {width: 100%;}
+#content .scene.front .article {}
+#content .scene.front .article h1 {padding: 30px 0 40px;}
+#content .scene.front .article p {font-size: 14px;}
+

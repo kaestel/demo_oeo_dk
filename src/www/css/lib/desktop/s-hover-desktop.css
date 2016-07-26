@@ -1,0 +1,7 @@
+/* General Hover */
+#navigation ul.navigation li:hover a span {border-bottom: 1px solid #d2d2d2;}
+#header .cropped ul.navigation li.work:hover a span {border-bottom: 1px solid #ffffff;}
+
+#content div.offices ul.offices li dl dd.email a:hover {opacity: 0.5;}
+#content div.offices ul.offices li .map h5 a:hover {opacity: 0.5;}
+

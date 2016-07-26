@@ -1,0 +1,29 @@
+/* HEADER */
+#header {position: fixed; z-index: 20; overflow: hidden; text-align: center; font-size: 0; background-color: rgba(235, 235, 235, 0.9);
+	-webkit-transform: translate3d(0px, 0px, 0px);
+}
+/*
+#header.hover {background-color: rgba(235, 235, 235, 0.8);}
+*/
+#header .servicenavigation {display: none;}
+
+/* NAV */
+#navigation {font-size: 0; white-space: nowrap; display: inline-block; vertical-align: top;}
+#navigation ul.navigation {font-size: 0; white-space: nowrap; text-align: center; height: 45px; display: inline-block; vertical-align: top;}
+#navigation ul.navigation li {width: 192px; height: 28px; padding-top: 17px; display: inline-block; vertical-align: top; font-size: 11px; text-transform: uppercase; cursor: pointer;}
+#navigation ul.navigation li a {display: block; height: 10px; border-left: 1px solid #d2d2d2;
+	font-family: "Nationale", Arial, sans-serif; font-weight: 700;
+}
+#navigation ul.navigation li:last-child a {border-right: 1px solid #d2d2d2;}
+#navigation ul.navigation li a span {display: inline-block; padding-bottom: 2px;}
+
+/* CROPPED NAV */
+#header .cropped {position: absolute; width: 194px; height: 45px; top: 0; left: 385px; overflow: hidden; background-color: #d2d2d2;}
+#header .cropped ul.navigation {margin-left: -380px; white-space: nowrap;}
+#header .cropped ul.navigation li {display: inline-block; vertical-align: top; height: 28px; padding-top: 17px; font-size: 11px; text-transform: uppercase;
+	font-family: "Nationale", Arial, sans-serif; font-weight: 700;
+}
+#header .cropped ul.navigation li a {color: #e1e1e1; cursor: default; display: block;}
+#header .cropped ul.navigation li a span {display: inline-block; padding-bottom: 2px;}
+#header .cropped ul.navigation li.work a {cursor: pointer;}
+

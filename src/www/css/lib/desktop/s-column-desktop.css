@@ -1,0 +1,122 @@
+#content .scene.column {opacity: 0;}
+#content .scene.column ul.columns li {
+	-webkit-transform: translate3d(0, 0, 0);
+}
+
+#content .scene.column > h1 {display: none;}
+	
+#content .scene.column div.column {font-size: 0px; text-align: left; position: relative;}
+#content .scene.column div.column div.columns {width: 665px; margin-right: 10px; display: inline-block; vertical-align: top; text-align: center; margin-bottom: -11px;}
+#content .scene.column div.column div.columns > h2 {padding: 40px; font-size: 22px; text-transform: uppercase; 
+	font-family: "Primo Serif", Times, serif; font-weight: 400;
+}
+#content .scene.column div.column div.columns li.hover > h2 {text-decoration: underline;}
+
+#content .scene.column div.column ul.columns li.item {overflow: hidden; cursor: pointer; border-bottom: 1px solid #d2d2d2; margin-bottom: 10px;}
+#content .scene.column div.column ul.columns li.item.unclickable {cursor: default;}
+#content .scene.column div.column ul.columns li.item div.fullstop {padding: 20px 0 35px;}
+#content .scene.column div.column ul.columns li.item .image {overflow: hidden; position: relative; background-color: #d2d2d2;
+	margin-bottom: 33px;
+}
+#content .scene.column div.column ul.columns li.item .image img {width: 100%; height: 100%; opacity: 0;}
+
+#content .scene.column div.column ul.columns li.item.video .play {height: 100px; width:100px; position: absolute; top: 50%; left: 50%; margin:-50px 0 0 -50px; z-index: 10;
+	background: url("/img/bn_play.svg") no-repeat center center; background-size: 100px 100px;
+}
+#content .scene.column div.column ul.columns li.item.video .play.clickable {cursor: pointer;}
+
+#content .scene.column div.column ul.columns li.item.video .vimeo {width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 20;}
+#content .scene.column div.column ul.columns li.item.video .vimeo iframe {width: 100%; height: 100%;}
+
+#content .scene.column div.column ul.columns li.item > dl {}
+#content .scene.column div.column ul.columns li.item > dl dt {display: none;}
+#content .scene.column div.column ul.columns li.item > dl dd {padding-top: 35px; font-size: 10px;
+	font-family: "Nationale", Arial, sans-serif; font-weight: 700;
+}
+#content .scene.column div.column ul.columns li.item h2 {padding: 30px 0 15px; font-size: 22px; text-transform: uppercase;
+	font-family: "Primo Serif", Times, serif; font-weight: 400;
+}
+
+#content .scene.column div.column ul.columns li.item .text {overflow: hidden; height: 0;}
+#content .scene.column div.column ul.columns li.item .text .article_body {padding: 15px 60px 0; overflow: hidden;}
+
+#content .scene.column div.column ul.columns li.item ul.tags {display: inline-block; vertical-align: top; padding: 15px 0 15px;}
+#content .scene.column div.column ul.columns li.item div.tags h3 {margin-right: 3px; font-size: 10px; font-weight:700; text-transform: uppercase; display: inline-block; vertical-align: top;}
+#content .scene.column div.column ul.columns li.item ul.tags li {display: inline-block; vertical-align: top; margin-right:3px; font-weight: 700; font-size: 10px; text-transform: uppercase;}
+
+#content .scene.column div.column ul.columns li.item div.images {overflow: hidden; height: 0;}
+#content .scene.column div.column ul.columns li.item div.images ul.images {padding: 30px 0 5px;}
+#content .scene.column div.column ul.columns li.item div.images ul.images li.image {margin-bottom: 10px;}
+
+#content .scene.column div.column div.filters {text-align: center; width: 275px; display: inline-block; vertical-align: top; position: fixed;}
+#content .scene.column div.column div.filters h2 {font-size: 16px; line-height: 18px; text-transform: uppercase; padding: 25px; border: 1px solid #d2d2d2; border-bottom: none;
+	font-family: "Primo Serif", Times, serif; font-weight: 400;
+}
+#content .scene.column div.column div.filters ul {border: 1px solid #ebebeb;}
+#content .scene.column div.column div.filters li {cursor: pointer; padding: 14px 0 12px; font-size: 12px; text-transform: uppercase; border-bottom: 1px solid #ebebeb;
+	font-family: "Nationale", Arial, sans-serif; font-weight: 400; 
+}
+#content .scene.column div.column div.filters li.selected,
+#content .scene.column div.column div.filters li.hover {color: #ebebeb;}
+#content .scene.column div.column div.filters li:last-child {border: none !important;}
+
+	/* sharing */
+#content .scene.column div.column div.sharing {position: relative; width: 140px; height: 33px; cursor: pointer; top: -33px;}
+#content .scene.column div.column div.sharing h4 {padding-top: 11px; height: 22px; text-align: center; font-size: 0;
+	font-weight:700;
+}
+#content .scene.column div.column div.sharing h4 span {display: inline-block; vertical-align: top; color: #ffffff; font-size: 10px; text-transform: uppercase; }
+#content .scene.column div.column div.sharing ul {position: absolute; width: 0; top:0; left: 140px; text-align: left; overflow: hidden;}
+#content .scene.column div.column div.sharing.hover ul {width: 282px;}
+#content .scene.column div.column div.sharing ul li {position:relative; padding: 11px 0 10px; width:140px; height: 11px; text-align: center; cursor: pointer; font-size: 0; text-transform: uppercase; border-bottom: 1px solid #d2d2d2; border-right: 1px solid #d2d2d2;}
+#content .scene.column div.column div.sharing ul li:last-child {margin:-33px 0 0 140px;}
+#content .scene.column div.column div.sharing ul li.hover a {color: #ffffff;}
+#content .scene.column div.column div.sharing ul li a {display: inline-block; vertical-align: top; font-size: 10px;
+	font-weight:700;
+}
+
+
+/* Single POST */
+/* article */
+#content .scene.column div.article {width: 70%; margin: 0 auto; padding-bottom: 60px;}
+#content .scene.column div.article h1 {padding: 35px 0; font-size: 22px; text-transform: uppercase;
+	font-family: "Primo Serif", Times, serif; font-weight: 400;
+}
+
+#content .scene.column div.article .image {overflow: hidden; position: relative; background-color: #d2d2d2;}
+#content .scene.column div.article .image img {width: 100%; height: 100%;}
+#content .scene.column div.article .image .vimeo {width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 20;}
+#content .scene.column div.article .image .vimeo iframe {width: 100%; height: 100%;}
+
+#content .scene.column div.article dl {}
+#content .scene.column div.article dl dt {display: none;}
+#content .scene.column div.article dl dd {padding-top:30px; font-size: 10px;
+	font-family: "Nationale", Arial, sans-serif; font-weight: 700;
+}
+
+#content .scene.column div.article .article_body {padding: 0 60px;}
+
+#content .scene.column div.article div.tags {padding: 15px 0 35px;}
+#content .scene.column div.article div.tags h3 {margin-right: 3px; font-size: 10px; font-weight:700; text-transform: uppercase; display: inline-block; vertical-align: top;}
+#content .scene.column div.article div.tags ul.tags {display: inline-block; vertical-align: top;}
+#content .scene.column div.article div.tags ul.tags li .context {display: none;}
+#content .scene.column div.article div.tags ul.tags li {display: inline-block; vertical-align: top; margin-right: 3px; font-weight: 700; font-size: 10px; text-transform: uppercase;}
+
+	/* sharing */
+#content .scene.column div.article div.sharing {position: relative; width: 140px; height: 33px; cursor: pointer;}
+#content .scene.column div.article div.sharing h4 {padding-top: 12px; height: 21px; text-align: center; font-size: 0;
+	font-weight:700;
+}
+#content .scene.column div.article div.sharing h4 span {display: inline-block; vertical-align: top; color: #ffffff; font-size: 10px; text-transform: uppercase; }
+#content .scene.column div.article div.sharing ul {position: absolute; width: 0; top:0; left: 140px; text-align: left; overflow: hidden;}
+#content .scene.column div.article div.sharing.hover ul {width:282px;}
+#content .scene.column div.article div.sharing ul li {position:relative; padding: 12px 0 9px; width:140px; height: 11px; text-align: center; cursor: pointer; font-size: 0; text-transform: uppercase; border-bottom: 1px solid #d2d2d2; border-right: 1px solid #d2d2d2;}
+#content .scene.column div.article div.sharing ul li:last-child {margin:-33px 0 0 140px;}
+#content .scene.column div.article div.sharing ul li.hover a {color: #ffffff;}
+#content .scene.column div.article div.sharing ul li a {display: inline-block; vertical-align: top; font-size: 10px;
+	font-weight:700;
+}
+
+#content .scene.column div.article > .video {display: none;}
+
+#content .scene.column div.columns .pagination {display: none;}

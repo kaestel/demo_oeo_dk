@@ -1,0 +1,54 @@
+#content .scene.expertise {opacity: 0;}
+
+#content .scene.expertise .description,
+#content .scene.expertise .image,
+#content .scene.expertise .video,
+#content .scene.expertise .service {
+	-webkit-transform: translate3d(0, 0, 0);
+}
+#content .scene.expertise h1 {display: none;}
+#content .scene.expertise .description p {width: 70%; margin: 0 auto; font-size: 20px;}
+#content .scene.expertise .description.en {padding-bottom: 30px;}
+#content .scene.expertise .description.ja p {font-size: 16px;}
+
+#content .scene.expertise > .image {margin-bottom: 70px; background-color: #d2d2d2; overflow: hidden;}
+#content .scene.expertise > .image img {width: 100%;}
+
+/* SERVICE */
+#content .scene.expertise .service {font-size: 0; padding: 50px 0 70px;}
+#content .scene.expertise .service .image {width: 50%; display: inline-block; vertical-align: top; overflow: hidden;}
+#content .scene.expertise .service .image .mask {margin: 0 0 0 5px;	background-color: #D2D2D2;}
+#content .scene.expertise .service .image img {width: 100%; height: 100%;}
+#content .scene.expertise .service .text {width: 50%; display: inline-block; vertical-align: top; }
+#content .scene.expertise .service .text .va {display: table; height: 100%; margin: 0 5px 0 0; background: #d2d2d2; padding: 0; border: none; border-spacing: 0; border-collapse: collapse;}
+#content .scene.expertise .service .text .vb {display: table-cell; vertical-align: middle; text-align: center; padding: 0 15%;}
+#content .scene.expertise .service .text h2 {text-transform:uppercase; color: #ebebeb; font-size: 22px; padding-bottom: 30px;
+	font-family: "Primo Serif", Times, serif;
+}
+#content .scene.expertise .service .text p {color: #ebebeb; margin-bottom: 6px; font-size: 16px; line-height: 1.375em;}
+#content .scene.expertise .service ul.tags {display: none;}
+
+/* VIDEO */
+#content .scene.expertise .video {position: relative; height:0; padding-bottom: 56.25%; margin: 0px 0 8px; background-repeat: no-repeat; background-size: 100% auto; background-color: #D2D2D2;}
+#content .scene.expertise .video .info {position: absolute; width: 320px; top:10px; bottom:10px; left: 0; right: 0; margin:0 auto;}
+#content .scene.expertise .video .info .va {display: table; height: 100%; width: 100%; margin: 0; padding: 0; border: none; border-spacing: 0; border-collapse: collapse;}
+#content .scene.expertise .video .info .vb {display: table-cell; vertical-align: middle; text-align: center;}
+
+#content .scene.expertise .video .info dl dt {display: none;}
+#content .scene.expertise .video .info dl dd {color:#ebebeb; font-size: 22px; text-transform: uppercase; padding: 0 40px;
+	font-family: "Primo Serif", Times, serif;
+}
+#content .scene.expertise .video .info dl dd.duration:before {content:"- \A"; white-space:pre;}
+#content .scene.expertise .video .info .play {height: 100px; width:100px; margin:40px auto 0; cursor: pointer;
+	background: url("/img/bn_play.svg") no-repeat; background-size: 100px 100px;
+}
+#content .scene.expertise .video .videoplayer {width: 100%;}
+#content .scene.expertise .video .videoplayer video {width: 101%; height: 100%; position: absolute; top: 0; left: -0.5%; background: #ebebeb;}
+#content .scene.expertise .video .videoplayer .controls a {position: absolute; width: 40px; height: 40px; bottom: 20px; left:20px; cursor: pointer;}
+#content .scene.expertise .video .videoplayer.playing .controls a {
+	background: url("/img/bn_pause.svg") no-repeat; background-size: 40px 40px;
+}
+#content .scene.expertise .video .videoplayer.paused .controls a {
+	background: url("/img/bn_play.svg") no-repeat; background-size: 40px 40px;
+}
+

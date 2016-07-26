@@ -1,0 +1,67 @@
+* {font-family: Arial, sans-serif; color: #14372d;
+	-webkit-text-size-adjust: none;
+	-webkit-font-smoothing: antialiased;
+/*
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+*/
+}
+
+html {}
+body {background: #ebebeb; margin: 0; overflow-y: scroll; overflow-x: hidden; text-align: center;}
+
+
+/* BASE */
+h1, h2, h3, h4, h5, h6, p, ul, li, dl, dd, dt {padding: 0; margin: 0;}
+h1, h2, h3, h4, h5, h6, p, li, dd, dt, span, a {line-height: 1em; font-weight: normal;}
+
+ul {list-style: none;}
+a {text-decoration: none; cursor: pointer;}
+a:hover {}
+
+img {border: 0; display: block;}
+form, fieldset, label, input, select, textarea {padding: 0; margin: 0; font-weight: normal;}
+fieldset {border: none;}
+input, select, textarea {font-size: 14px;}
+input, textarea {outline: none; border-radius: 0;
+	-webkit-appearance: none;
+}
+
+#page {position: relative; padding:0 10px;}
+
+a, span {font-size: inherit; font-family: inherit; color: inherit; text-transform: inherit; font-weight: inherit;}
+
+h1 {font-size: 18px; font-weight: 400; text-transform: uppercase;
+	font-family: "Primo Serif", Times, serif;
+}
+h2 {font-size: 22px; line-height: 1.25em; padding-bottom: 7px; padding-top: 7px;
+/*	font-family: Arial, sans-serif;*/
+}
+h3 {font-size: 22px;
+	font-family: "Nationale", Arial, sans-serif;
+}
+h4 {font-size: 13px;
+	font-family: "Nationale", Arial, sans-serif;
+}
+h5 {}
+h6 {}
+
+p {font-size: 14px; line-height: 1.38em; padding: 0 0 20px;
+	font-family: "Nationale", Arial, sans-serif;
+} 
+
+
+ul {font-size: 0;}
+li {
+	/*display: inline-block; vertical-align: top; */
+	font-size: 13px;
+}
+
+dl {font-size: 0;} 
+dd, 
+dt {
+	/*display: inline-block; vertical-align: top; */
+	text-transform: uppercase; color: #666666;
+	font-size: 13px;
+}

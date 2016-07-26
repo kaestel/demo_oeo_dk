@@ -1,0 +1,27 @@
+/* General Hover */
+#navigation ul.navigation li:active a span {border-bottom: 1px solid #d2d2d2;}
+#header .cropped ul.navigation li.work:active a span {border-bottom: 1px solid #ffffff;}
+
+#content {position: relative;}
+
+#content .scene {position: absolute;}
+#content div.offices ul.offices li dl dd.email a:active {opacity: 0.5;}
+#content div.offices ul.offices li .map h5 a:active {opacity: 0.5;}
+
+
+#content .scene img {
+	-webkit-transform: translate3d(0, 0, 0);
+}
+#header *,
+#content .scene.column .filters,
+#content .scene div.sharing,
+#content .scene div.social {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+#content .scene.expertise .video .videoplayer .controls {display: none;}
+
+#content .scene.column .fullStopPlaceholder {height: 72px;}
+
+#content .scene.column li.item.disabled * {display: none !important;}

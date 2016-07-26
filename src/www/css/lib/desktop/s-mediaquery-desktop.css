@@ -1,0 +1,19 @@
+@media (max-width: 959px) {
+	/*
+	#page,
+	#header {width: 100%;}
+	*/
+
+	/* Header */
+
+	/* Front */
+	#content .scene.front .article {width: 80%;}
+	
+	/* About */
+	#content .scene.about .en > p,
+	#content .scene.about .jp > p {width: 80%;}
+	/* Expertise */
+	#content .scene.expertise .description p {width: 80%;}
+	/* Work */
+	#content .scene.work div.project .description {width: 80%;}
+}

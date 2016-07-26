@@ -1,0 +1,860 @@
+
+/*seg_tablet_include.css*/
+
+/*s-fonts.css*/
+@font-face {
+	font-family: 'Nationale';
+	src: url('/css/fonts/Nationale-DemiBold.woff') format('woff'),
+		 url('/css/fonts/Nationale-DemiBold.ttf') format('truetype'),
+		 url('/css/fonts/Nationale-DemiBold.svg#f474d1189e72373340fe5bad92cb7394') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Nationale';
+	src: url('/css/fonts/Nationale-Regular.woff') format('woff'),
+		 url('/css/fonts/Nationale-Regular.ttf') format('truetype'),
+		 url('/css/fonts/Nationale-Regular.svg#2322dcd60970b145ddd0fffb7e508234') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Primo Serif';
+	src: url('/css/fonts/Primo-Serif.woff') format('woff'),
+		 url('/css/fonts/Primo-Serif.ttf') format('truetype'),
+		 url('/css/fonts/Primo-Serif.svg#4d459687cee49daadabad67f0650a7f8') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+/*s-page-desktop.css*/
+* {font-family: Arial, sans-serif;
+	-webkit-text-size-adjust: none;
+	-webkit-font-smoothing: antialiased;
+}
+html {}
+body {background: #ebebeb; margin: 0; overflow-y: scroll; overflow-x: hidden; text-align: center;}
+h1, h2, h3, h4, h5, h6, p, ul, li, dl, dd, dt {padding: 0; margin: 0;}
+h1, h2, h3, h4, h5, h6, p, li, dd, dt, span, a {line-height: 1em; font-weight: normal;}
+ul {list-style: none;}
+a {text-decoration: none; cursor: pointer;}
+a:hover {text-decoration: none;}
+img {border: 0; display: block;}
+form, fieldset, label, input, select, textarea {padding: 0; margin: 0; font-weight: normal;}
+fieldset {border: none;}
+input, select, textarea {font-size: 14px;}
+input, textarea {outline: none;}
+#page {position: relative; opacity: 0; z-index: 1;}
+a, span {font-size: inherit; font-family: inherit; color: inherit; text-transform: inherit; font-weight: inherit;}
+h1 {font-size: 46px; 
+	font-family: "Primo Serif", Times, serif; font-weight: 400;
+}
+h2 {font-size: 22px; line-height: 1.25em; padding-bottom: 7px; padding-top: 7px;}
+h3 {font-size: 22px;
+	font-family: "Nationale", Arial, sans-serif;
+}
+h4 {font-size: 13px;
+	font-family: "Nationale", Arial, sans-serif;
+}
+h5 {}
+h6 {}
+p {font-size: 14px; line-height: 1.38em; padding: 0 0 20px;
+	font-family: "Nationale", Arial, sans-serif;
+} 
+ul {font-size: 0;}
+li {font-size: 13px;}
+dl {font-size: 0;} 
+dd, 
+dt {text-transform: uppercase; color: #666666; font-size: 13px;}
+body div.bn_nav_left {position: fixed; left: 0; top: 0; height: 100%; z-index: 20; cursor: pointer;}
+body div.bn_nav_right {position: fixed; right: 0; top: 0; height: 100%; z-index: 20; cursor: pointer;}
+#intro {position: fixed; top: 0; left: 0; width: 155px; height: 240px; opacity: 0;}
+#intro svg {width:160px; height:152px; padding:2px;}
+#intro img {width: 100%; height: 100%;}
+#intro div {text-transform: uppercase; font-size: 22px; padding: 20px 0; color: #a0a0a0;
+	font-family: "Primo Serif", Times, serif; font-weight: 400;
+}
+#intro div span {display: inline-block; width: 40px; text-align: right;}
+.logo_stroke {fill:none;stroke:#a0a0a0;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round; stroke-miterlimit:10;}
+
+
+/*s-content-desktop.css*/
+#content {margin: 0 auto;}
+#content * {color: #d2d2d2;}
+#content .scene {position: absolute; top: 90px; left: 0;}
+#content .scene.built {background: #ebebeb;}
+#content .scene div.fullstop {margin: 0 auto; padding: 60px 0;}
+#content .scene div.fullstop svg {width: 15px; height: 15px;}
+#content .scene div.fullstop svg circle {stroke: #d2d2d2;}
+#content .scene div.newsletter,
+#content .scene div.social,
+#content .scene div.offices {
+	-webkit-transform: translate3d(0, 0, 0);
+}
+
+
+/*s-footer-desktop.css*/
+#footer {}
+#content div.newsletter {padding: 70px 0 70px; height: 96px;margin: 0 auto; border-top: 1px solid #ebebeb;}
+#content div.newsletter h4 {padding: 0 0 30px; font-size: 22px; text-transform: uppercase; 
+	font-family: "Primo Serif", Times, serif;
+}
+#content div.newsletter form {width: 560px; margin: 0 auto; font-size: 0; height: 44px; overflow: hidden;}
+#content div.newsletter form fieldset {font-size: 0; display: inline-block; vertical-align: top; height: 44px;
+	background: url(/img/signup_pattern.png) no-repeat center center;
+}
+#content div.newsletter form .field {width: 220px; display: inline-block; vertical-align: top; padding: 9px 0;}
+#content div.newsletter form .field label {display: none;}
+#content div.newsletter form .field div.help {display: none;}
+#content div.newsletter form input {border: none; width: 184px; padding: 6px 18px 4px; line-height: 14px; font-size: 12px; text-transform: uppercase; background: transparent; border-radius: 0; color: #d2d2d2;
+	-webkit-appearance: none;
+}
+#content div.newsletter form input[type="text"] {border-left: 1px solid #ebebeb;}
+#content div.newsletter form input.error {text-decoration: underline;}
+#content div.newsletter form ul.actions {width: 118px; display: inline-block; vertical-align: top; height: 42px; border: 1px solid #ebebeb; overflow: hidden;}
+#content div.newsletter form ul.actions.hover {
+	background: transparent !important;
+}
+#content div.newsletter form ul.actions li input {width: 100%; padding: 14px 0 10px; color: #ffffff; line-height: 14px; font-size: 12px; cursor: pointer;}
+#content div.newsletter .receipt h2 {font-size: 18px; margin-top:-31px;
+	font-family: "Nationale", Arial, sans-serif;
+}
+#content div.social {padding: 0 0 70px; width: 570px; margin: 0 auto;}
+#content div.social h4 {padding: 0 0 30px; font-size: 22px; text-transform: uppercase; 
+	font-family: "Primo Serif", Times, serif;
+}
+#content div.social ul.social {text-align: center; position: relative;}
+#content div.social ul.social li {display: inline-block; vertical-align: top; margin: 0 5px; padding: 15px 0 15px; cursor: pointer; width: 178px; text-transform: uppercase; font-size: 12px; border: 1px solid #ebebeb; text-align: center;}
+#content div.social ul.social li a {display: inline-block; vertical-align: top;}
+#content div.social ul.social li svg {margin: 3px 0 0 10px; width: 10px; height: 10px; display: inline-block; vertical-align: top;}
+#content div.social ul.social li.hover a {color: #ffffff;}
+#content div.social ul.social li.hover svg polygon {fill: #ffffff; stroke: #ffffff;}
+#content div.offices {width: 100%; padding: 0 0 10px; border-bottom: 1px solid #ebebeb;}
+#content div.offices ul.offices {font-size: 0;}
+#content div.offices ul.offices * {color: #ebebeb}
+#content div.offices ul.offices > li {display: inline-block; vertical-align: top; width: 32.666%; margin-right: 1%; height: 520px; background-color: #d2d2d2;}
+#content div.offices ul.offices > li:last-child {margin-right: 0;}
+#content div.offices ul.offices li.vcard.copenhagen .name,
+#content div.offices ul.offices li.vcard.kyoto .name {display: none;}
+#content div.offices ul.offices > li img {width: 100%;}
+#content div.offices ul.offices > li h4 {padding: 60px 0 30px; font-size: 18px; text-transform: uppercase; color: #ffffff;
+	font-family: "Primo Serif", Times, serif;
+}
+#content div.offices ul.offices li ul {padding-bottom: 20px;}
+#content div.offices ul.offices li ul li {padding-bottom: 6px;}
+#content div.offices ul.offices li dl {padding-bottom: 20px;}
+#content div.offices ul.offices li dl dt {display: none;}
+#content div.offices ul.offices li dl dd {text-transform: none; padding-bottom: 6px;}
+#content div.offices ul.offices li dl dd.email {font-weight: 700;}
+#content div.offices ul.offices li .map {}
+#content div.offices ul.offices li .map h5 {font-size: 12px; 
+	font-family: "Nationale", Times, serif; font-weight: 700;
+}
+#content div.offices ul.offices li .map dl {display: none;}
+
+
+/*s-header-desktop.css*/
+#header {position: fixed; z-index: 20; overflow: hidden; text-align: center; font-size: 0; background-color: rgba(235, 235, 235, 0.9);
+	-webkit-transform: translate3d(0px, 0px, 0px);
+}
+#header .servicenavigation {display: none;}
+#navigation {font-size: 0; white-space: nowrap; display: inline-block; vertical-align: top;}
+#navigation ul.navigation {font-size: 0; white-space: nowrap; text-align: center; height: 45px; display: inline-block; vertical-align: top;}
+#navigation ul.navigation li {width: 192px; height: 28px; padding-top: 17px; display: inline-block; vertical-align: top; font-size: 11px; text-transform: uppercase; cursor: pointer;}
+#navigation ul.navigation li a {display: block; height: 10px; border-left: 1px solid #d2d2d2;
+	font-family: "Nationale", Arial, sans-serif; font-weight: 700;
+}
+#navigation ul.navigation li:last-child a {border-right: 1px solid #d2d2d2;}
+#navigation ul.navigation li a span {display: inline-block; padding-bottom: 2px;}
+#header .cropped {position: absolute; width: 194px; height: 45px; top: 0; left: 385px; overflow: hidden; background-color: #d2d2d2;}
+#header .cropped ul.navigation {margin-left: -380px; white-space: nowrap;}
+#header .cropped ul.navigation li {display: inline-block; vertical-align: top; height: 28px; padding-top: 17px; font-size: 11px; text-transform: uppercase;
+	font-family: "Nationale", Arial, sans-serif; font-weight: 700;
+}
+#header .cropped ul.navigation li a {color: #e1e1e1; cursor: default; display: block;}
+#header .cropped ul.navigation li a span {display: inline-block; padding-bottom: 2px;}
+#header .cropped ul.navigation li.work a {cursor: pointer;}
+
+
+/*s-active-tablet.css*/
+#navigation ul.navigation li:active a span {border-bottom: 1px solid #d2d2d2;}
+#header .cropped ul.navigation li.work:active a span {border-bottom: 1px solid #ffffff;}
+#content {position: relative;}
+#content .scene {position: absolute;}
+#content div.offices ul.offices li dl dd.email a:active {opacity: 0.5;}
+#content div.offices ul.offices li .map h5 a:active {opacity: 0.5;}
+#content .scene img {
+	-webkit-transform: translate3d(0, 0, 0);
+}
+#header *,
+#content .scene.column .filters,
+#content .scene div.sharing,
+#content .scene div.social {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+#content .scene.expertise .video .videoplayer .controls {display: none;}
+#content .scene.column .fullStopPlaceholder {height: 72px;}
+#content .scene.column li.item.disabled * {display: none !important;}
+
+
+/*s-color-desktop.css*/
+#content *,
+#header .cropped,
+#navigation ul.navigation li a {
+	-moz-transition: color 1s ease-in, border-color 1s ease-in, background-color 1s ease-in;
+	-webkit-transition: color 1s ease-in, border-color 1s ease-in, background-color 1s ease-in;
+	-o-transition: color 1s ease-in, border-color 1s ease-in, background-color 1s ease-in;
+	-ms-transition: color 1s ease-in, border-color 1s ease-in, background-color 1s ease-in;
+	transition: color 1s ease-in, border-color 1s ease-in, background-color 1s ease-in;
+}
+#content div.sharing svg polygon,
+#content div.social svg polygon,
+#content div.fullstop svg circle,
+#content .scene.front .logo .logo_stroke {
+	-moz-transition: fill 1s ease-in, stroke 1s ease-in;
+	-webkit-transition: fill 1s ease-in, stroke 1s ease-in;
+	-o-transition: fill 1s ease-in, stroke 1s ease-in;
+	-ms-transition: fill 1s ease-in, stroke 1s ease-in;
+	transition: fill 1s ease-in, stroke 1s ease-in;
+}
+body.green #navigation ul.navigation li:last-child a,
+body.green #navigation ul.navigation li:hover a span,
+body.green #content div.newsletter,
+body.green #content div.offices,
+body.green #content div.social ul.social li,
+body.green #content div.newsletter form input[type="text"],
+body.green #content div.newsletter form ul.actions,
+body.green #content .scene.work div.project,
+body.green #content .scene.work div.project div.sharing ul,
+body.green #content .scene.work div.project div.sharing ul li,
+body.green #content .scene.column div.column ul.columns li.item,
+body.green #content .scene.column div.column div.filters h2,
+body.green #content .scene.column div.column div.filters ul,
+body.green #content .scene.column div.column div.filters li,
+body.green #content .scene.column div.column div.filters li:first-child,
+body.green #content .scene.column div.column div.sharing ul li,
+body.green #content .scene.column div.article div.sharing ul li {border-color: #14372d;}
+body.green #header .cropped,
+body.green #content div.newsletter form ul.actions,
+body.green #content div.social ul.social li.hover,
+body.green #content div.offices ul.offices > li,
+body.green #content .scene.work div.project ul.media li.text_box .text_mask,
+body.green #content .scene.work div.project ul.sharing li.hover,
+body.green #content .scene.work div.project div.sharing,
+body.green #content .scene.expertise .service .text .vb,
+body.green #content .scene.about ul.quotes li.i2 .vb,
+body.green #content .scene.about ul.quotes li.i3 .vb,
+body.green #content .scene.about ul.people li.person dl:before,
+body.green #content .scene.about ul.people li.person dl dd.email.hover,
+body.green #content .scene.about ul.people li.person dl dd.linkedin.hover,
+body.green #content .scene.column div.article div.sharing h4,
+body.green #content .scene.column div.column div.sharing h4,
+body.green #content .scene.column div.column div.sharing ul li.hover,
+body.green #content .scene.column div.article div.sharing ul li.hover,
+body.green #content .scene.column div.column div.filters li.hover,
+body.green #content .scene.column div.column div.filters li.selected {background-color: #14372d;}
+body.green #intro *,
+body.green #content *,
+body.green #content div.newsletter form .actions.hover input,
+body.green #content div.newsletter form .field input {color: #14372d;}
+body.green #content .scene.work div.project ul.media li.video .info,
+body.green #content .scene.expertise .video .info,
+body.green #content .scene.about .video .info {background-color: rgba(20, 55, 45, 0.9);}
+body.green #navigation ul.navigation li a,
+body.green #content .scene.about ul.people li.person dl dd.email,
+body.green #content .scene.about ul.people li.person dl dd.linkedin {border-color: #14372d; color: #14372d;}
+body.green #content .scene.about ul.people li.person dl dd svg polygon,
+body.green #content div.sharing ul.sharing li svg polygon,
+body.green #content div.social svg polygon,
+body.green #intro img svg * {fill: #14372d; stroke: #14372d;}
+body.green #content div.fullstop svg circle,
+body.green #content .scene.front .logo svg .logo_stroke {stroke:#14372d;}
+body.bordeaux #navigation ul.navigation li:last-child a,
+body.bordeaux #navigation ul.navigation li:hover a span,
+body.bordeaux #content div.newsletter,
+body.bordeaux #content div.offices,
+body.bordeaux #content div.social ul.social li,
+body.bordeaux #content div.newsletter form input[type="text"],
+body.bordeaux #content div.newsletter form ul.actions,
+body.bordeaux #content .scene.work div.project,
+body.bordeaux #content .scene.work div.project div.sharing ul,
+body.bordeaux #content .scene.work div.project div.sharing ul li,
+body.bordeaux #content .scene.column div.column ul.columns li.item,
+body.bordeaux #content .scene.column div.column div.filters h2,
+body.bordeaux #content .scene.column div.column div.filters ul,
+body.bordeaux #content .scene.column div.column div.filters li,
+body.bordeaux #content .scene.column div.column div.filters li:first-child,
+body.bordeaux #content .scene.column div.column div.sharing ul li,
+body.bordeaux #content .scene.column div.article div.sharing ul li {border-color: #59192b;}
+body.bordeaux #header .cropped,
+body.bordeaux #content div.newsletter form ul.actions,
+body.bordeaux #content div.social ul.social li.hover,
+body.bordeaux #content div.offices ul.offices > li,
+body.bordeaux #content .scene.work div.project ul.media li.text_box .text_mask,
+body.bordeaux #content .scene.work div.project ul.sharing li.hover,
+body.bordeaux #content .scene.work div.project div.sharing,
+body.bordeaux #content .scene.expertise .service .text .vb,
+body.bordeaux #content .scene.about ul.quotes li.i2 .vb,
+body.bordeaux #content .scene.about ul.quotes li.i3 .vb,
+body.bordeaux #content .scene.about ul.people li.person dl:before,
+body.bordeaux #content .scene.about ul.people li.person dl dd.email.hover,
+body.bordeaux #content .scene.about ul.people li.person dl dd.linkedin.hover,
+body.bordeaux #content .scene.column div.article div.sharing h4,
+body.bordeaux #content .scene.column div.column div.sharing h4,
+body.bordeaux #content .scene.column div.column div.sharing ul li.hover,
+body.bordeaux #content .scene.column div.article div.sharing ul li.hover,
+body.bordeaux #content .scene.column div.column div.filters li.hover,
+body.bordeaux #content .scene.column div.column div.filters li.selected {background-color: #59192b;}
+body.bordeaux #intro *,
+body.bordeaux #content *,
+body.bordeaux #content div.newsletter form .actions.hover input,
+body.bordeaux #content div.newsletter form .field input {color: #59192b;}
+body.bordeaux #content .scene.work div.project ul.media li.video .info,
+body.bordeaux #content .scene.expertise .video .info,
+body.bordeaux #content .scene.about .video .info {background-color: rgba(89, 25, 43, 0.9);}
+body.bordeaux #navigation ul.navigation li a,
+body.bordeaux #content .scene.about ul.people li.person dl dd.email,
+body.bordeaux #content .scene.about ul.people li.person dl dd.linkedin {border-color: #59192b; color: #59192b;}
+body.bordeaux #content .scene.about ul.people li.person dl dd svg polygon,
+body.bordeaux #content div.sharing ul.sharing li svg polygon,
+body.bordeaux #content div.social svg polygon,
+body.bordeaux #intro img svg * {fill: #59192b; stroke: #59192b;}
+body.bordeaux #content div.fullstop svg circle,
+body.bordeaux #content .scene.front .logo svg .logo_stroke {stroke: #59192b;}
+body.blue #navigation ul.navigation li:last-child a,
+body.blue #navigation ul.navigation li:hover a span,
+body.blue #content div.newsletter,
+body.blue #content div.offices,
+body.blue #content div.social ul.social li,
+body.blue #content div.newsletter form input[type="text"],
+body.blue #content div.newsletter form ul.actions,
+body.blue #content .scene.work div.project,
+body.blue #content .scene.work div.project div.sharing ul,
+body.blue #content .scene.work div.project div.sharing ul li,
+body.blue #content .scene.column div.column ul.columns li.item,
+body.blue #content .scene.column div.column div.filters h2,
+body.blue #content .scene.column div.column div.filters ul,
+body.blue #content .scene.column div.column div.filters li,
+body.blue #content .scene.column div.column div.filters li:first-child,
+body.blue #content .scene.column div.column div.sharing ul li
+body.blue #content .scene.column div.article div.sharing ul li {border-color: #191941;}
+body.blue #header .cropped,
+body.blue #content div.newsletter form ul.actions,
+body.blue #content div.social ul.social li.hover,
+body.blue #content div.offices ul.offices > li,
+body.blue #content .scene.work div.project ul.media li.text_box .text_mask,
+body.blue #content .scene.work div.project ul.sharing li.hover,
+body.blue #content .scene.work div.project div.sharing,
+body.blue #content .scene.expertise .service .text .vb,
+body.blue #content .scene.about ul.quotes li.i2 .vb,
+body.blue #content .scene.about ul.quotes li.i3 .vb,
+body.blue #content .scene.about ul.people li.person dl:before,
+body.blue #content .scene.about ul.people li.person dl dd.email.hover,
+body.blue #content .scene.about ul.people li.person dl dd.linkedin.hover,
+body.blue #content .scene.column div.article div.sharing h4,
+body.blue #content .scene.column div.column div.sharing h4,
+body.blue #content .scene.column div.column div.sharing ul li.hover,
+body.blue #content .scene.column div.article div.sharing ul li.hover,
+body.blue #content .scene.column div.column div.filters li.hover,
+body.blue #content .scene.column div.column div.filters li.selected {background-color: #191941;}
+body.blue #intro *,
+body.blue #content *,
+body.blue #content div.newsletter form .actions.hover input,
+body.blue #content div.newsletter form .field input {color: #191941;}
+body.blue #content .scene.work div.project ul.media li.video .info,
+body.blue #content .scene.expertise .video .info,
+body.blue #content .scene.about .video .info {background-color: rgba(25, 25, 65, 0.9);}
+body.blue #navigation ul.navigation li a,
+body.blue #content .scene.about ul.people li.person dl dd.email,
+body.blue #content .scene.about ul.people li.person dl dd.linkedin {border-color: #191941; color: #191941;}
+body.blue #content .scene.about ul.people li.person dl dd svg polygon,
+body.blue #content div.sharing ul.sharing li svg polygon,
+body.blue #content div.social svg polygon,
+body.blue #intro img svg * {fill: #191941; stroke: #191941;}
+body.blue #content div.fullstop svg circle,
+body.blue #content .scene.front .logo svg .logo_stroke {stroke: #191941;}
+body.brown #navigation ul.navigation li:last-child a,
+body.brown #navigation ul.navigation li:hover a span,
+body.brown #content div.newsletter,
+body.brown #content div.offices,
+body.brown #content div.social ul.social li,
+body.brown #content div.newsletter form input[type="text"],
+body.brown #content div.newsletter form ul.actions,
+body.brown #content .scene.work div.project,
+body.brown #content .scene.work div.project div.sharing ul,
+body.brown #content .scene.work div.project div.sharing ul li,
+body.brown #content .scene.column div.column ul.columns li.item,
+body.brown #content .scene.column div.column div.filters h2,
+body.brown #content .scene.column div.column div.filters ul,
+body.brown #content .scene.column div.column div.filters li,
+body.brown #content .scene.column div.column div.filters li:first-child,
+body.brown #content .scene.column div.column div.sharing ul li,
+body.brown #content .scene.column div.article div.sharing ul li {border-color: #78644b;}
+body.brown #header .cropped,
+body.brown #content div.newsletter form ul.actions,
+body.brown #content div.social ul.social li.hover,
+body.brown #content div.offices ul.offices > li,
+body.brown #content .scene.work div.project ul.media li.text_box .text_mask,
+body.brown #content .scene.work div.project ul.sharing li.hover,
+body.brown #content .scene.work div.project div.sharing,
+body.brown #content .scene.expertise .service .text .vb,
+body.brown #content .scene.about ul.quotes li.i2 .vb,
+body.brown #content .scene.about ul.quotes li.i3 .vb,
+body.brown #content .scene.about ul.people li.person dl:before,
+body.brown #content .scene.about ul.people li.person dl dd.email.hover,
+body.brown #content .scene.about ul.people li.person dl dd.linkedin.hover,
+body.brown #content .scene.column div.column div.filters li.hover,
+body.brown #content .scene.column div.article div.sharing h4,
+body.brown #content .scene.column div.column div.sharing h4,
+body.brown #content .scene.column div.column div.sharing ul li.hover,
+body.brown #content .scene.column div.article div.sharing ul li.hover,
+body.brown #content .scene.column div.column div.filters li.selected {background-color: #78644b;}
+body.brown #intro *,
+body.brown #content *,
+body.brown #content div.newsletter form .actions.hover input,
+body.brown #content div.newsletter form .field input {color: #78644b;}
+body.brown #content .scene.work div.project ul.media li.video .info,
+body.brown #content .scene.expertise .video .info,
+body.brown #content .scene.about .video .info {background-color: rgba(120, 100, 75, 0.9);}
+body.brown #navigation ul.navigation li a,
+body.brown #content .scene.about ul.people li.person dl dd.email,
+body.brown #content .scene.about ul.people li.person dl dd.linkedin {border-color: #78644b; color: #78644b;}
+body.brown #content .scene.about ul.people li.person dl dd svg polygon,
+body.brown #content div.sharing ul.sharing li svg polygon,
+body.brown #content div.social svg polygon,
+body.brown #intro img svg * {fill: #78644b; stroke: #78644b;}
+body.brown #content div.fullstop svg circle,
+body.brown #content .scene.front .logo svg .logo_stroke {stroke: #78644b;}
+body.red #navigation ul.navigation li:last-child a,
+body.red #navigation ul.navigation li:hover a span,
+body.red #content div.newsletter,
+body.red #content div.offices,
+body.red #content div.social ul.social li,
+body.red #content div.newsletter form input[type="text"],
+body.red #content div.newsletter form ul.actions,
+body.red #content .scene.work div.project,
+body.red #content .scene.work div.project div.sharing ul,
+body.red #content .scene.work div.project div.sharing ul li,
+body.red #content .scene.column div.column ul.columns li.item,
+body.red #content .scene.column div.column div.filters h2,
+body.red #content .scene.column div.column div.filters ul,
+body.red #content .scene.column div.column div.filters li,
+body.red #content .scene.column div.column div.filters li:first-child,
+body.red #content .scene.column div.column div.sharing ul li,
+body.red #content .scene.column div.article div.sharing ul li {border-color: #96190f;}
+body.red #header .cropped,
+body.red #content div.newsletter form ul.actions,
+body.red #content div.social ul.social li.hover,
+body.red #content div.offices ul.offices > li,
+body.red #content .scene.work div.project ul.media li.text_box .text_mask,
+body.red #content .scene.work div.project ul.sharing li.hover,
+body.red #content .scene.work div.project div.sharing,
+body.red #content .scene.expertise .service .text .vb,
+body.red #content .scene.about ul.quotes li.i2 .vb,
+body.red #content .scene.about ul.quotes li.i3 .vb,
+body.red #content .scene.about ul.people li.person dl:before,
+body.red #content .scene.about ul.people li.person dl dd.email.hover,
+body.red #content .scene.about ul.people li.person dl dd.linkedin.hover,
+body.red #content .scene.column div.column div.filters li.hover,
+body.red #content .scene.column div.article div.sharing h4,
+body.red #content .scene.column div.column div.sharing h4,
+body.red #content .scene.column div.column div.sharing ul li.hover,
+body.red #content .scene.column div.article div.sharing ul li.hover,
+body.red #content .scene.column div.column div.filters li.selected {background-color: #96190f;}
+body.red #intro *,
+body.red #content *,
+body.red #content div.newsletter form .actions.hover input,
+body.red #content div.newsletter form .field input {color: #96190f;}
+body.red #content .scene.work div.project ul.media li.video .info,
+body.red #content .scene.expertise .video .info,
+body.red #content .scene.about .video .info {background-color: rgba(150, 25, 15, 0.9);}
+body.red #navigation ul.navigation li a,
+body.red #content .scene.about ul.people li.person dl dd.email,
+body.red #content .scene.about ul.people li.person dl dd.linkedin {border-color: #96190f; color: #96190f;}
+body.red #content .scene.about ul.people li.person dl dd svg polygon,
+body.red #content div.sharing ul.sharing li svg polygon,
+body.red #content div.social svg polygon,
+body.red #intro img svg * {fill: #96190f; stroke: #96190f;}
+body.red #content div.fullstop svg circle,
+body.red #content .scene.front .logo svg .logo_stroke {stroke: #96190f;}
+
+
+/*s-front-desktop.css*/
+#content .scene.front {opacity: 0;}
+#content .scene.front .video {
+	-webkit-transform: translate3d(0, 0, 0);
+}
+#content .scene.front .logo {position: absolute; top: 120px; left: 50%; margin-left: -110px; width: 220px; height: 220px; opacity: 0; z-index: 15;}
+#content .scene.front .logo svg {width: 220px; height: 220px;}
+#content .scene.front .video {position: relative; 
+	overflow: hidden;}
+#content .scene.front .video .videoplayer {background-color: transparent;}
+#content .scene.front .video .videoplayer video {
+	 position: absolute; top: 0; background-color: transparent;
+	width: 101%; left: -0.5%;
+}
+#content .scene.front .video .videoplayer .controls {display: none;}
+#content .scene.front .video img {opacity: 0; position: relative; top: 0;
+	width: 101%; left: -0.5%;
+}
+#content .scene.front .article {position: relative; width: 70%; margin:-74px auto 0; padding: 0 0 50px;}
+#content .scene.front .article h1 {padding: 0 0 50px; font-size: 46px; line-height:1.08em; text-transform: uppercase; font-weight:400; margin: 0 -40px;
+	font-family: "Primo Serif", Times, serif;
+}
+#content .scene.front .article p {font-size: 20px;}
+#content .scene.front .article p.en {padding-bottom: 50px;}
+#content .scene.front .article .ja p {font-size: 16px;}
+
+
+/*s-about-desktop.css*/
+#content .scene.about {opacity: 0; padding: 30px 0 0;}
+#content .scene.about .description,
+#content .scene.about .image,
+#content .scene.about .video,
+#content .scene.about p,
+#content .scene.about .contact,
+#content .scene.about .quote {
+	-webkit-transform: translate3d(0, 0, 0);
+}
+#content .scene.about h1 {display: none;}
+#content .scene.about .en > p,
+#content .scene.about .ja > p {width: 70%; margin: 0 auto;}
+#content .scene.about .en > p {font-size: 20px;}
+#content .scene.about .ja > p {font-size: 16px;}
+#content .scene.about .en {padding-bottom: 30px;}
+#content .scene.about .video {position: relative; margin: 50px 0 70px; background-color:#d2d2d2; background-repeat: no-repeat; background-size: 100% auto; overflow: hidden;}
+#content .scene.about .video img {width: 101%; position: relative; left: -0.5%; top: 0;}
+#content .scene.about .video .info {position: absolute; width: 320px; top:10px; bottom:10px; left: 0; right: 0; margin:0 auto; z-index: 10;}
+#content .scene.about .video .info .va {display: table; height: 100%; width: 100%; margin: 0; padding: 0; border: none; border-spacing: 0; border-collapse: collapse;}
+#content .scene.about .video .info .vb {display: table-cell; vertical-align: middle; text-align: center;}
+#content .scene.about .video .info dl dt {display: none;}
+#content .scene.about .video .info dl dd {color:#ebebeb; font-size: 22px; text-transform: uppercase; padding:0 40px;
+	font-family: "Primo Serif", Times, serif;
+}
+#content .scene.about .video .info dl dd.duration:before {content:"- \A"; white-space:pre;}
+#content .scene.about .video .info .play {height: 100px; width:100px; margin:40px auto 0; cursor: pointer;
+	background: url("/img/bn_play.svg") no-repeat; background-size: 100px 100px;
+}
+#content .scene.about .video .videoplayer {width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 12;}
+#content .scene.about .video .videoplayer video {width: 101%; height: 100%; position: absolute; top: 0; left: -0.5%; background: #ebebeb;}
+#content .scene.about .video .videoplayer .controls a {position: absolute; width: 40px; height: 40px; bottom: 20px; left:20px; cursor: pointer;}
+#content .scene.about .video .videoplayer.playing .controls a {
+	background: url("/img/bn_pause.svg") no-repeat; background-size: 40px 40px;
+}
+#content .scene.about .video .videoplayer.paused .controls a {
+	background: url("/img/bn_play.svg") no-repeat; background-size: 40px 40px;
+}
+#content .scene.about ul.people {font-size: 0; padding-top: 50px;}
+#content .scene.about ul.people li.person {width: 49.5%; display: inline-block; vertical-align: top; padding-bottom: 70px;}
+#content .scene.about ul.people li.person:nth-child(1) {margin-right:0.5%;}
+#content .scene.about ul.people li.person:nth-child(2) {margin-left:0.5%;}
+#content .scene.about ul.people li.person .image {background-color: #D2D2D2;}
+#content .scene.about ul.people li.person .image img {width: 100%;}
+#content .scene.about ul.people li.person .position {padding: 30px 0 0 0; font-size: 10px; text-transform: uppercase; 
+	font-family: "Nationale", Times, serif; font-weight: 600;
+}
+#content .scene.about ul.people li.person h2.name {padding: 20px 0; text-transform: uppercase; 
+	font-family: "Primo Serif", Times, serif;
+}
+#content .scene.about ul.people li.person .description {padding:0 30px;}
+#content .scene.about ul.people li.person .en p,
+#content .scene.about ul.people li.person .ja p {width: 100%; font-size: 1em;}
+#content .scene.about ul.people li.person .en {padding-bottom: 10px;}
+#content .scene.about ul.people li.person dl {position: relative; margin-top:10px;}
+#content .scene.about ul.people li.person dl:before {content: ""; position: absolute; left:50%; margin-left:-12px; width:24px; height:1px;}
+#content .scene.about ul.people li.person dl dt {display: none;}
+#content .scene.about ul.people li.person dl dt.telephone {padding:30px 0 20px; display: inline-block; vertical-align: top; text-transform: none; }
+#content .scene.about ul.people li.person dl dt.telephone:after {content: ":"; padding-right:5px;}
+#content .scene.about ul.people li.person dl dd.telephone {padding: 30px 0 20px; display: block; display: inline-block; vertical-align: top;}
+#content .scene.about ul.people li.person dl dd.email,
+#content .scene.about ul.people li.person dl dd.linkedin {padding: 14px 10px; width: 178px; margin: 10px auto; text-align: center; font-size: 12px; cursor: pointer; border: 1px solid #ebebeb;}
+#content .scene.about ul.people li.person dl dd.email.hover a,
+#content .scene.about ul.people li.person dl dd.linkedin.hover a {color: #ffffff;}
+#content .scene.about ul.people li.person dl dd a {display: inline-block; vertical-align: top;}
+#content .scene.about ul.people li.person dl dd svg {margin: 3px 0 0 10px; width: 10px; height: 10px; display: inline-block; vertical-align: top;}
+#content .scene.about ul.people li.person dl dd.hover a {color: #ffffff;}
+#content .scene.about ul.people li.person dl dd.hover svg polygon {fill: #ffffff; stroke: #ffffff;}
+#content .scene.about ul.quotes {padding-bottom: 10px;}
+#content .scene.about ul.quotes li {display: inline-block; vertical-align: top; width: 50%; overflow: hidden;}
+#content .scene.about ul.quotes li img {width: 100%;}
+#content .scene.about ul.quotes li.image .image {background-color: #D2D2D2;}
+#content .scene.about ul.quotes li.quote * {color:#ffffff;}
+#content .scene.about ul.quotes li.quote h3 {font-size: 22px; padding-bottom: 30px; text-transform: uppercase; 
+	font-family: "Primo Serif", Times, serif;
+}
+#content .scene.about ul.quotes li.quote p {font-size: 16px; padding-bottom: 30px; line-height: 1.375em;}
+#content .scene.about ul.quotes li.quote dl {}
+#content .scene.about ul.quotes li.quote dl dt {display: none;}
+#content .scene.about ul.quotes li.quote dl dd {width: 180px; margin:0 auto; font-size: 16px; text-transform: none; line-height: 1.3em;
+	font-family: "Nationale", Times, serif; font-weight: 400;
+}
+#content .scene.about ul.quotes li.quote dl dd.author {font-weight:700; text-transform: uppercase; padding-bottom:6px;}
+#content .scene.about ul.quotes li.quote .va {display: table; height: 100%; margin: 0; padding: 0; border: none; border-spacing: 0; border-collapse: collapse;}
+#content .scene.about ul.quotes li.quote .vb {display: table-cell; vertical-align: middle; text-align: center; padding: 0 15%;}
+#content .scene.about ul.quotes li.i0 {width: 100%; margin-bottom: 10px;}
+#content .scene.about ul.quotes li.i1 .image {margin-right: 5px;}
+#content .scene.about ul.quotes li.i1 .image+.image {margin-top:10px;}
+#content .scene.about ul.quotes li.i2 .va {margin-left: 5px;}
+#content .scene.about ul.quotes li.i3 .va {margin-right: 5px; margin-top: 10px;}
+#content .scene.about ul.quotes li.i4 .image {margin-left: 5px; margin-top: 10px;}
+#content .scene.about ul.quotes li.i2,
+#content .scene.about ul.quotes li.i3 {width: 50%;}
+
+
+/*s-expertise-desktop.css*/
+#content .scene.expertise {opacity: 0;}
+#content .scene.expertise .description,
+#content .scene.expertise .image,
+#content .scene.expertise .video,
+#content .scene.expertise .service {
+	-webkit-transform: translate3d(0, 0, 0);
+}
+#content .scene.expertise h1 {display: none;}
+#content .scene.expertise .description p {width: 70%; margin: 0 auto; font-size: 20px;}
+#content .scene.expertise .description.en {padding-bottom: 30px;}
+#content .scene.expertise .description.ja p {font-size: 16px;}
+#content .scene.expertise > .image {margin-bottom: 70px; background-color: #d2d2d2; overflow: hidden;}
+#content .scene.expertise > .image img {width: 100%;}
+#content .scene.expertise .service {font-size: 0; padding: 50px 0 70px;}
+#content .scene.expertise .service .image {width: 50%; display: inline-block; vertical-align: top; overflow: hidden;}
+#content .scene.expertise .service .image .mask {margin: 0 0 0 5px;	background-color: #D2D2D2;}
+#content .scene.expertise .service .image img {width: 100%; height: 100%;}
+#content .scene.expertise .service .text {width: 50%; display: inline-block; vertical-align: top; }
+#content .scene.expertise .service .text .va {display: table; height: 100%; margin: 0 5px 0 0; background: #d2d2d2; padding: 0; border: none; border-spacing: 0; border-collapse: collapse;}
+#content .scene.expertise .service .text .vb {display: table-cell; vertical-align: middle; text-align: center; padding: 0 15%;}
+#content .scene.expertise .service .text h2 {text-transform:uppercase; color: #ebebeb; font-size: 22px; padding-bottom: 30px;
+	font-family: "Primo Serif", Times, serif;
+}
+#content .scene.expertise .service .text p {color: #ebebeb; margin-bottom: 6px; font-size: 16px; line-height: 1.375em;}
+#content .scene.expertise .service ul.tags {display: none;}
+#content .scene.expertise .video {position: relative; height:0; padding-bottom: 56.25%; margin: 0px 0 8px; background-repeat: no-repeat; background-size: 100% auto; background-color: #D2D2D2;}
+#content .scene.expertise .video .info {position: absolute; width: 320px; top:10px; bottom:10px; left: 0; right: 0; margin:0 auto;}
+#content .scene.expertise .video .info .va {display: table; height: 100%; width: 100%; margin: 0; padding: 0; border: none; border-spacing: 0; border-collapse: collapse;}
+#content .scene.expertise .video .info .vb {display: table-cell; vertical-align: middle; text-align: center;}
+#content .scene.expertise .video .info dl dt {display: none;}
+#content .scene.expertise .video .info dl dd {color:#ebebeb; font-size: 22px; text-transform: uppercase; padding: 0 40px;
+	font-family: "Primo Serif", Times, serif;
+}
+#content .scene.expertise .video .info dl dd.duration:before {content:"- \A"; white-space:pre;}
+#content .scene.expertise .video .info .play {height: 100px; width:100px; margin:40px auto 0; cursor: pointer;
+	background: url("/img/bn_play.svg") no-repeat; background-size: 100px 100px;
+}
+#content .scene.expertise .video .videoplayer {width: 100%;}
+#content .scene.expertise .video .videoplayer video {width: 101%; height: 100%; position: absolute; top: 0; left: -0.5%; background: #ebebeb;}
+#content .scene.expertise .video .videoplayer .controls a {position: absolute; width: 40px; height: 40px; bottom: 20px; left:20px; cursor: pointer;}
+#content .scene.expertise .video .videoplayer.playing .controls a {
+	background: url("/img/bn_pause.svg") no-repeat; background-size: 40px 40px;
+}
+#content .scene.expertise .video .videoplayer.paused .controls a {
+	background: url("/img/bn_play.svg") no-repeat; background-size: 40px 40px;
+}
+
+
+/*s-work-desktop.css*/
+#content .scene.work {opacity: 0;}
+#content .scene.work .image,
+#content .scene.work ul.projects h2,
+#content .scene.work ul.projects p {
+	-webkit-transform: translate3d(0, 0, 0);
+}
+#content .scene.work h1 {display: none;}
+#content .scene.work ul.projects {text-align: left;}
+#content .scene.work ul.projects li {width: 49.5%; display: inline-block; vertical-align: top; padding-bottom: 70px; text-align: center; cursor: pointer;}
+#content .scene.work ul.projects li:nth-child(2n) {margin-left:1%;}
+#content .scene.work ul.projects li h2 {padding-top: 30px; padding-bottom: 20px; font-size: 22px; text-transform:uppercase;
+	font-family: "Primo Serif", Times, serif;
+}
+#content .scene.work ul.projects li .image {width: 100%; background-color: #d2d2d2; overflow: hidden;}
+#content .scene.work ul.projects li .image img {width: 100%; height: 100%; opacity: 0;}
+#content .scene.work ul.projects li .description {padding: 0 20px 10px;}
+#content .scene.work ul.projects li.hover h2 {text-decoration: underline;}
+#content .scene.work div.project {border-bottom: 1px solid #d2d2d2; margin-bottom: 10px;}
+#content .scene.work div.project .grid {display: none;}
+#content .scene.work div.project > .image {background-color: #d2d2d2; text-indent: -9999px; position: relative; overflow: hidden;}
+#content .scene.work div.project > .image img {width: 100%;}
+#content .scene.work div.project > .image a {display: none;}
+#content .scene.work div.project div.sharing {position: relative; width: 140px; height: 33px; cursor: pointer;}
+#content .scene.work div.project div.sharing h4 {padding-top: 11px; height: 22px; text-align: center; font-size: 0;
+	font-weight:700;
+}
+#content .scene.work div.project div.sharing h4 span {display: inline-block; vertical-align: top; color: #ffffff; font-size: 10px; text-transform: uppercase; }
+#content .scene.work div.project div.sharing ul {position: absolute; width: 0; top:0; left: 140px; text-align: left; overflow: hidden;}
+#content .scene.work div.project div.sharing.hover ul {width:282px;}
+#content .scene.work div.project div.sharing ul li {position:relative; padding: 11px 0 10px; width:140px; height: 11px; text-align: center; cursor: pointer; font-size: 0; text-transform: uppercase; border-bottom: 1px solid #d2d2d2; border-right: 1px solid #d2d2d2;}
+#content .scene.work div.project div.sharing ul li:last-child {margin:-33px 0 0 140px;}
+#content .scene.work div.project div.sharing ul li.hover a {color: #ffffff;}
+#content .scene.work div.project div.sharing ul li a {display: inline-block; vertical-align: top; font-size: 10px;
+	font-weight:700;
+}
+#content .scene.work div.project h1 {display: block; padding-top: 40px; padding-bottom: 12px; font-size: 46px; text-transform: uppercase; 
+	font-family: "Primo Serif", Times, serif; font-weight: 400;
+}
+#content .scene.work div.project .description {width: 70%; margin: 0 auto;}
+#content .scene.work div.project .description h2 {font-size: 20px; padding-bottom: 62px; text-transform: uppercase;
+	font-family: "Primo Serif", Times, serif;
+}
+#content .scene.work div.project .description div p {font-size: 20px;}
+#content .scene.work div.project .description div.en {padding-bottom: 30px;}
+#content .scene.work div.project .description div.ja p {font-size: 16px;}
+#content .scene.work div.project > .scope,
+#content .scene.work div.project > .credits {display: none;}
+#content .scene.work div.project ul.grid {display: none;}
+#content .scene.work div.project ul.media > li {display: inline-block; vertical-align: top;}
+#content .scene.work div.project ul.media li > a {display: none;}
+#content .scene.work div.project ul.media li img {width: 100%;}
+#content .scene.work div.project ul.media li .va {display: table; height: 100%; width: 100%; margin: 0; padding: 0; border: none; border-spacing: 0; border-collapse: collapse;}
+#content .scene.work div.project ul.media li .vb {display: table-cell; vertical-align: middle; text-align: center; padding: 0 15%;}
+#content .scene.work div.project ul.media li.i2 {width: 50%; overflow: hidden;}
+#content .scene.work div.project ul.media li.i2 .image_mask {margin-right: 5px;}
+#content .scene.work div.project ul.media li.i2 img+img {padding-top:10px;}
+#content .scene.work div.project ul.media li.text_box {width: 50%;}
+#content .scene.work div.project ul.media li.text_box .text_mask {margin-left: 5px; background: #ebebeb;}
+#content .scene.work div.project ul.media li.text_box * {color: #d2d2d2;}
+#content .scene.work div.project ul.media li.text_box h3 {font-size: 22px; padding-bottom: 20px;  text-transform: uppercase;
+	font-family: "Primo Serif", Times, serif;
+}
+#content .scene.work div.project ul.media li.text_box p {font-size: 20px;}
+#content .scene.work div.project ul.media li.text_box ul {padding-bottom:40px;}
+#content .scene.work div.project ul.media li.text_box ul li {display: block; font-size: 20px; padding-bottom:6px;}
+#content .scene.work div.project ul.media li.video {position: relative; margin: 10px 0 0 0; width: 100%; background: #d2d2d2;}
+#content .scene.work div.project ul.media li.video img {width: 100%; height: 100%;}
+#content .scene.work div.project ul.media li.video .info {position: absolute; width: 320px; top:10px; bottom: 10px; left: 0; right: 0; margin: 0 auto;}
+#content .scene.work div.project ul.media li.video .info dl dt {display: none;}
+#content .scene.work div.project ul.media li.video .info dl dd {color:#ebebeb; font-size: 22px; text-transform: uppercase; padding:0 40px;
+	font-family: "Primo Serif", Times, serif;
+}
+#content .scene.work div.project ul.media li.video .info dl dd.duration:before {content:"- \A"; white-space: pre;}
+#content .scene.work div.project ul.media li.video .info .play {height: 100px; width:100px; margin:40px auto; cursor: pointer;
+	background: url("/img/bn_play.svg") no-repeat; background-size: 100px 100px;
+}
+#content .scene.work div.project ul.media li.video .videoplayer {width: 100%;}
+#content .scene.work div.project ul.media li.video .videoplayer video {width: 100%; height: 100%; position: absolute; top: 0; left: 0; background: #ebebeb;}
+#content .scene.work div.project ul.media li.video .videoplayer .controls a {position: absolute; width: 40px; height: 40px; bottom: 20px; left:20px; cursor: pointer;}
+#content .scene.work div.project ul.media li.video .videoplayer.playing .controls a {
+	background: url("/img/bn_pause.svg") no-repeat; background-size: 40px 40px;
+}
+#content .scene.work div.project ul.media li.video .videoplayer.paused .controls a {
+	background: url("/img/bn_play.svg") no-repeat; background-size: 40px 40px;
+}
+#content .scene.work div.project ul.media li.i4 {width: 50%; margin-top: 10px;}
+#content .scene.work div.project ul.media li.i5 {width: 50%; margin-top: 10px;}
+#content .scene.work div.project ul.media li.i4 .image_mask {margin-right: 5px;}
+#content .scene.work div.project ul.media li.i5 .image_mask {margin-left: 5px;}
+#content .scene.work div.project .description .body1.ja {padding-bottom: 70px;}
+#content .scene.work div.project .description .body2.en {padding-top: 70px;}
+#content .scene.work div.project .image.i6 {margin-top: 40px;}
+
+
+/*s-column-desktop.css*/
+#content .scene.column {opacity: 0;}
+#content .scene.column ul.columns li {
+	-webkit-transform: translate3d(0, 0, 0);
+}
+#content .scene.column > h1 {display: none;}
+#content .scene.column div.column {font-size: 0px; text-align: left; position: relative;}
+#content .scene.column div.column div.columns {width: 665px; margin-right: 10px; display: inline-block; vertical-align: top; text-align: center; margin-bottom: -11px;}
+#content .scene.column div.column div.columns > h2 {padding: 40px; font-size: 22px; text-transform: uppercase; 
+	font-family: "Primo Serif", Times, serif; font-weight: 400;
+}
+#content .scene.column div.column div.columns li.hover > h2 {text-decoration: underline;}
+#content .scene.column div.column ul.columns li.item {overflow: hidden; cursor: pointer; border-bottom: 1px solid #d2d2d2; margin-bottom: 10px;}
+#content .scene.column div.column ul.columns li.item.unclickable {cursor: default;}
+#content .scene.column div.column ul.columns li.item div.fullstop {padding: 20px 0 35px;}
+#content .scene.column div.column ul.columns li.item .image {overflow: hidden; position: relative; background-color: #d2d2d2;
+	margin-bottom: 33px;
+}
+#content .scene.column div.column ul.columns li.item .image img {width: 100%; height: 100%; opacity: 0;}
+#content .scene.column div.column ul.columns li.item.video .play {height: 100px; width:100px; position: absolute; top: 50%; left: 50%; margin:-50px 0 0 -50px; z-index: 10;
+	background: url("/img/bn_play.svg") no-repeat center center; background-size: 100px 100px;
+}
+#content .scene.column div.column ul.columns li.item.video .play.clickable {cursor: pointer;}
+#content .scene.column div.column ul.columns li.item.video .vimeo {width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 20;}
+#content .scene.column div.column ul.columns li.item.video .vimeo iframe {width: 100%; height: 100%;}
+#content .scene.column div.column ul.columns li.item > dl {}
+#content .scene.column div.column ul.columns li.item > dl dt {display: none;}
+#content .scene.column div.column ul.columns li.item > dl dd {padding-top: 35px; font-size: 10px;
+	font-family: "Nationale", Arial, sans-serif; font-weight: 700;
+}
+#content .scene.column div.column ul.columns li.item h2 {padding: 30px 0 15px; font-size: 22px; text-transform: uppercase;
+	font-family: "Primo Serif", Times, serif; font-weight: 400;
+}
+#content .scene.column div.column ul.columns li.item .text {overflow: hidden; height: 0;}
+#content .scene.column div.column ul.columns li.item .text .article_body {padding: 15px 60px 0; overflow: hidden;}
+#content .scene.column div.column ul.columns li.item ul.tags {display: inline-block; vertical-align: top; padding: 15px 0 15px;}
+#content .scene.column div.column ul.columns li.item div.tags h3 {margin-right: 3px; font-size: 10px; font-weight:700; text-transform: uppercase; display: inline-block; vertical-align: top;}
+#content .scene.column div.column ul.columns li.item ul.tags li {display: inline-block; vertical-align: top; margin-right:3px; font-weight: 700; font-size: 10px; text-transform: uppercase;}
+#content .scene.column div.column ul.columns li.item div.images {overflow: hidden; height: 0;}
+#content .scene.column div.column ul.columns li.item div.images ul.images {padding: 30px 0 5px;}
+#content .scene.column div.column ul.columns li.item div.images ul.images li.image {margin-bottom: 10px;}
+#content .scene.column div.column div.filters {text-align: center; width: 275px; display: inline-block; vertical-align: top; position: fixed;}
+#content .scene.column div.column div.filters h2 {font-size: 16px; line-height: 18px; text-transform: uppercase; padding: 25px; border: 1px solid #d2d2d2; border-bottom: none;
+	font-family: "Primo Serif", Times, serif; font-weight: 400;
+}
+#content .scene.column div.column div.filters ul {border: 1px solid #ebebeb;}
+#content .scene.column div.column div.filters li {cursor: pointer; padding: 14px 0 12px; font-size: 12px; text-transform: uppercase; border-bottom: 1px solid #ebebeb;
+	font-family: "Nationale", Arial, sans-serif; font-weight: 400; 
+}
+#content .scene.column div.column div.filters li.selected,
+#content .scene.column div.column div.filters li.hover {color: #ebebeb;}
+#content .scene.column div.column div.filters li:last-child {border: none !important;}
+#content .scene.column div.column div.sharing {position: relative; width: 140px; height: 33px; cursor: pointer; top: -33px;}
+#content .scene.column div.column div.sharing h4 {padding-top: 11px; height: 22px; text-align: center; font-size: 0;
+	font-weight:700;
+}
+#content .scene.column div.column div.sharing h4 span {display: inline-block; vertical-align: top; color: #ffffff; font-size: 10px; text-transform: uppercase; }
+#content .scene.column div.column div.sharing ul {position: absolute; width: 0; top:0; left: 140px; text-align: left; overflow: hidden;}
+#content .scene.column div.column div.sharing.hover ul {width: 282px;}
+#content .scene.column div.column div.sharing ul li {position:relative; padding: 11px 0 10px; width:140px; height: 11px; text-align: center; cursor: pointer; font-size: 0; text-transform: uppercase; border-bottom: 1px solid #d2d2d2; border-right: 1px solid #d2d2d2;}
+#content .scene.column div.column div.sharing ul li:last-child {margin:-33px 0 0 140px;}
+#content .scene.column div.column div.sharing ul li.hover a {color: #ffffff;}
+#content .scene.column div.column div.sharing ul li a {display: inline-block; vertical-align: top; font-size: 10px;
+	font-weight:700;
+}
+#content .scene.column div.article {width: 70%; margin: 0 auto; padding-bottom: 60px;}
+#content .scene.column div.article h1 {padding: 35px 0; font-size: 22px; text-transform: uppercase;
+	font-family: "Primo Serif", Times, serif; font-weight: 400;
+}
+#content .scene.column div.article .image {overflow: hidden; position: relative; background-color: #d2d2d2;}
+#content .scene.column div.article .image img {width: 100%; height: 100%;}
+#content .scene.column div.article .image .vimeo {width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 20;}
+#content .scene.column div.article .image .vimeo iframe {width: 100%; height: 100%;}
+#content .scene.column div.article dl {}
+#content .scene.column div.article dl dt {display: none;}
+#content .scene.column div.article dl dd {padding-top:30px; font-size: 10px;
+	font-family: "Nationale", Arial, sans-serif; font-weight: 700;
+}
+#content .scene.column div.article .article_body {padding: 0 60px;}
+#content .scene.column div.article div.tags {padding: 15px 0 35px;}
+#content .scene.column div.article div.tags h3 {margin-right: 3px; font-size: 10px; font-weight:700; text-transform: uppercase; display: inline-block; vertical-align: top;}
+#content .scene.column div.article div.tags ul.tags {display: inline-block; vertical-align: top;}
+#content .scene.column div.article div.tags ul.tags li .context {display: none;}
+#content .scene.column div.article div.tags ul.tags li {display: inline-block; vertical-align: top; margin-right: 3px; font-weight: 700; font-size: 10px; text-transform: uppercase;}
+#content .scene.column div.article div.sharing {position: relative; width: 140px; height: 33px; cursor: pointer;}
+#content .scene.column div.article div.sharing h4 {padding-top: 12px; height: 21px; text-align: center; font-size: 0;
+	font-weight:700;
+}
+#content .scene.column div.article div.sharing h4 span {display: inline-block; vertical-align: top; color: #ffffff; font-size: 10px; text-transform: uppercase; }
+#content .scene.column div.article div.sharing ul {position: absolute; width: 0; top:0; left: 140px; text-align: left; overflow: hidden;}
+#content .scene.column div.article div.sharing.hover ul {width:282px;}
+#content .scene.column div.article div.sharing ul li {position:relative; padding: 12px 0 9px; width:140px; height: 11px; text-align: center; cursor: pointer; font-size: 0; text-transform: uppercase; border-bottom: 1px solid #d2d2d2; border-right: 1px solid #d2d2d2;}
+#content .scene.column div.article div.sharing ul li:last-child {margin:-33px 0 0 140px;}
+#content .scene.column div.article div.sharing ul li.hover a {color: #ffffff;}
+#content .scene.column div.article div.sharing ul li a {display: inline-block; vertical-align: top; font-size: 10px;
+	font-weight:700;
+}
+#content .scene.column div.article > .video {display: none;}
+#content .scene.column div.columns .pagination {display: none;}
+
+
+/*s-mediaquery-desktop.css*/
+@media (max-width: 959px) {
+	#content .scene.front .article {width: 80%;}
+	#content .scene.about .en > p,
+	#content .scene.about .jp > p {width: 80%;}
+	#content .scene.expertise .description p {width: 80%;}
+	#content .scene.work div.project .description {width: 80%;}
+}
+

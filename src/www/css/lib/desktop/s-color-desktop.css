@@ -1,0 +1,325 @@
+
+#content *,
+#header .cropped,
+#navigation ul.navigation li a {
+
+	-moz-transition: color 1s ease-in, border-color 1s ease-in, background-color 1s ease-in;
+	-webkit-transition: color 1s ease-in, border-color 1s ease-in, background-color 1s ease-in;
+	-o-transition: color 1s ease-in, border-color 1s ease-in, background-color 1s ease-in;
+	-ms-transition: color 1s ease-in, border-color 1s ease-in, background-color 1s ease-in;
+	transition: color 1s ease-in, border-color 1s ease-in, background-color 1s ease-in;
+
+}
+#content div.sharing svg polygon,
+#content div.social svg polygon,
+#content div.fullstop svg circle,
+#content .scene.front .logo .logo_stroke {
+
+	-moz-transition: fill 1s ease-in, stroke 1s ease-in;
+	-webkit-transition: fill 1s ease-in, stroke 1s ease-in;
+	-o-transition: fill 1s ease-in, stroke 1s ease-in;
+	-ms-transition: fill 1s ease-in, stroke 1s ease-in;
+	transition: fill 1s ease-in, stroke 1s ease-in;
+
+}
+
+
+
+/* GREEN */
+body.green #navigation ul.navigation li:last-child a,
+body.green #navigation ul.navigation li:hover a span,
+body.green #content div.newsletter,
+body.green #content div.offices,
+body.green #content div.social ul.social li,
+body.green #content div.newsletter form input[type="text"],
+body.green #content div.newsletter form ul.actions,
+body.green #content .scene.work div.project,
+body.green #content .scene.work div.project div.sharing ul,
+body.green #content .scene.work div.project div.sharing ul li,
+body.green #content .scene.column div.column ul.columns li.item,
+body.green #content .scene.column div.column div.filters h2,
+body.green #content .scene.column div.column div.filters ul,
+body.green #content .scene.column div.column div.filters li,
+body.green #content .scene.column div.column div.filters li:first-child,
+body.green #content .scene.column div.column div.sharing ul li,
+body.green #content .scene.column div.article div.sharing ul li {border-color: #14372d;}
+
+body.green #header .cropped,
+body.green #content div.newsletter form ul.actions,
+body.green #content div.social ul.social li.hover,
+body.green #content div.offices ul.offices > li,
+body.green #content .scene.work div.project ul.media li.text_box .text_mask,
+body.green #content .scene.work div.project ul.sharing li.hover,
+body.green #content .scene.work div.project div.sharing,
+body.green #content .scene.expertise .service .text .vb,
+body.green #content .scene.about ul.quotes li.i2 .vb,
+body.green #content .scene.about ul.quotes li.i3 .vb,
+body.green #content .scene.about ul.people li.person dl:before,
+body.green #content .scene.about ul.people li.person dl dd.email.hover,
+body.green #content .scene.about ul.people li.person dl dd.linkedin.hover,
+body.green #content .scene.column div.article div.sharing h4,
+body.green #content .scene.column div.column div.sharing h4,
+body.green #content .scene.column div.column div.sharing ul li.hover,
+body.green #content .scene.column div.article div.sharing ul li.hover,
+body.green #content .scene.column div.column div.filters li.hover,
+body.green #content .scene.column div.column div.filters li.selected {background-color: #14372d;}
+
+body.green #intro *,
+body.green #content *,
+body.green #content div.newsletter form .actions.hover input,
+body.green #content div.newsletter form .field input {color: #14372d;}
+
+body.green #content .scene.work div.project ul.media li.video .info,
+body.green #content .scene.expertise .video .info,
+body.green #content .scene.about .video .info {background-color: rgba(20, 55, 45, 0.9);}
+
+body.green #navigation ul.navigation li a,
+body.green #content .scene.about ul.people li.person dl dd.email,
+body.green #content .scene.about ul.people li.person dl dd.linkedin {border-color: #14372d; color: #14372d;}
+
+body.green #content .scene.about ul.people li.person dl dd svg polygon,
+body.green #content div.sharing ul.sharing li svg polygon,
+body.green #content div.social svg polygon,
+body.green #intro img svg * {fill: #14372d; stroke: #14372d;}
+body.green #content div.fullstop svg circle,
+body.green #content .scene.front .logo svg .logo_stroke {stroke:#14372d;}
+
+
+/* BORDEAUX */
+body.bordeaux #navigation ul.navigation li:last-child a,
+body.bordeaux #navigation ul.navigation li:hover a span,
+body.bordeaux #content div.newsletter,
+body.bordeaux #content div.offices,
+body.bordeaux #content div.social ul.social li,
+body.bordeaux #content div.newsletter form input[type="text"],
+body.bordeaux #content div.newsletter form ul.actions,
+body.bordeaux #content .scene.work div.project,
+body.bordeaux #content .scene.work div.project div.sharing ul,
+body.bordeaux #content .scene.work div.project div.sharing ul li,
+body.bordeaux #content .scene.column div.column ul.columns li.item,
+body.bordeaux #content .scene.column div.column div.filters h2,
+body.bordeaux #content .scene.column div.column div.filters ul,
+body.bordeaux #content .scene.column div.column div.filters li,
+body.bordeaux #content .scene.column div.column div.filters li:first-child,
+body.bordeaux #content .scene.column div.column div.sharing ul li,
+body.bordeaux #content .scene.column div.article div.sharing ul li {border-color: #59192b;}
+
+body.bordeaux #header .cropped,
+body.bordeaux #content div.newsletter form ul.actions,
+body.bordeaux #content div.social ul.social li.hover,
+body.bordeaux #content div.offices ul.offices > li,
+body.bordeaux #content .scene.work div.project ul.media li.text_box .text_mask,
+body.bordeaux #content .scene.work div.project ul.sharing li.hover,
+body.bordeaux #content .scene.work div.project div.sharing,
+body.bordeaux #content .scene.expertise .service .text .vb,
+body.bordeaux #content .scene.about ul.quotes li.i2 .vb,
+body.bordeaux #content .scene.about ul.quotes li.i3 .vb,
+body.bordeaux #content .scene.about ul.people li.person dl:before,
+body.bordeaux #content .scene.about ul.people li.person dl dd.email.hover,
+body.bordeaux #content .scene.about ul.people li.person dl dd.linkedin.hover,
+body.bordeaux #content .scene.column div.article div.sharing h4,
+body.bordeaux #content .scene.column div.column div.sharing h4,
+body.bordeaux #content .scene.column div.column div.sharing ul li.hover,
+body.bordeaux #content .scene.column div.article div.sharing ul li.hover,
+body.bordeaux #content .scene.column div.column div.filters li.hover,
+body.bordeaux #content .scene.column div.column div.filters li.selected {background-color: #59192b;}
+
+body.bordeaux #intro *,
+body.bordeaux #content *,
+body.bordeaux #content div.newsletter form .actions.hover input,
+body.bordeaux #content div.newsletter form .field input {color: #59192b;}
+
+body.bordeaux #content .scene.work div.project ul.media li.video .info,
+body.bordeaux #content .scene.expertise .video .info,
+body.bordeaux #content .scene.about .video .info {background-color: rgba(89, 25, 43, 0.9);}
+
+body.bordeaux #navigation ul.navigation li a,
+body.bordeaux #content .scene.about ul.people li.person dl dd.email,
+body.bordeaux #content .scene.about ul.people li.person dl dd.linkedin {border-color: #59192b; color: #59192b;}
+
+body.bordeaux #content .scene.about ul.people li.person dl dd svg polygon,
+body.bordeaux #content div.sharing ul.sharing li svg polygon,
+body.bordeaux #content div.social svg polygon,
+body.bordeaux #intro img svg * {fill: #59192b; stroke: #59192b;}
+body.bordeaux #content div.fullstop svg circle,
+body.bordeaux #content .scene.front .logo svg .logo_stroke {stroke: #59192b;}
+
+
+/* BLUE */
+body.blue #navigation ul.navigation li:last-child a,
+body.blue #navigation ul.navigation li:hover a span,
+body.blue #content div.newsletter,
+body.blue #content div.offices,
+body.blue #content div.social ul.social li,
+body.blue #content div.newsletter form input[type="text"],
+body.blue #content div.newsletter form ul.actions,
+body.blue #content .scene.work div.project,
+body.blue #content .scene.work div.project div.sharing ul,
+body.blue #content .scene.work div.project div.sharing ul li,
+body.blue #content .scene.column div.column ul.columns li.item,
+body.blue #content .scene.column div.column div.filters h2,
+body.blue #content .scene.column div.column div.filters ul,
+body.blue #content .scene.column div.column div.filters li,
+body.blue #content .scene.column div.column div.filters li:first-child,
+body.blue #content .scene.column div.column div.sharing ul li
+body.blue #content .scene.column div.article div.sharing ul li {border-color: #191941;}
+
+body.blue #header .cropped,
+body.blue #content div.newsletter form ul.actions,
+body.blue #content div.social ul.social li.hover,
+body.blue #content div.offices ul.offices > li,
+body.blue #content .scene.work div.project ul.media li.text_box .text_mask,
+body.blue #content .scene.work div.project ul.sharing li.hover,
+body.blue #content .scene.work div.project div.sharing,
+body.blue #content .scene.expertise .service .text .vb,
+body.blue #content .scene.about ul.quotes li.i2 .vb,
+body.blue #content .scene.about ul.quotes li.i3 .vb,
+body.blue #content .scene.about ul.people li.person dl:before,
+body.blue #content .scene.about ul.people li.person dl dd.email.hover,
+body.blue #content .scene.about ul.people li.person dl dd.linkedin.hover,
+body.blue #content .scene.column div.article div.sharing h4,
+body.blue #content .scene.column div.column div.sharing h4,
+body.blue #content .scene.column div.column div.sharing ul li.hover,
+body.blue #content .scene.column div.article div.sharing ul li.hover,
+body.blue #content .scene.column div.column div.filters li.hover,
+body.blue #content .scene.column div.column div.filters li.selected {background-color: #191941;}
+
+body.blue #intro *,
+body.blue #content *,
+body.blue #content div.newsletter form .actions.hover input,
+body.blue #content div.newsletter form .field input {color: #191941;}
+
+body.blue #content .scene.work div.project ul.media li.video .info,
+body.blue #content .scene.expertise .video .info,
+body.blue #content .scene.about .video .info {background-color: rgba(25, 25, 65, 0.9);}
+
+body.blue #navigation ul.navigation li a,
+body.blue #content .scene.about ul.people li.person dl dd.email,
+body.blue #content .scene.about ul.people li.person dl dd.linkedin {border-color: #191941; color: #191941;}
+
+body.blue #content .scene.about ul.people li.person dl dd svg polygon,
+body.blue #content div.sharing ul.sharing li svg polygon,
+body.blue #content div.social svg polygon,
+body.blue #intro img svg * {fill: #191941; stroke: #191941;}
+body.blue #content div.fullstop svg circle,
+body.blue #content .scene.front .logo svg .logo_stroke {stroke: #191941;}
+
+
+/* BROWN */
+body.brown #navigation ul.navigation li:last-child a,
+body.brown #navigation ul.navigation li:hover a span,
+body.brown #content div.newsletter,
+body.brown #content div.offices,
+body.brown #content div.social ul.social li,
+body.brown #content div.newsletter form input[type="text"],
+body.brown #content div.newsletter form ul.actions,
+body.brown #content .scene.work div.project,
+body.brown #content .scene.work div.project div.sharing ul,
+body.brown #content .scene.work div.project div.sharing ul li,
+body.brown #content .scene.column div.column ul.columns li.item,
+body.brown #content .scene.column div.column div.filters h2,
+body.brown #content .scene.column div.column div.filters ul,
+body.brown #content .scene.column div.column div.filters li,
+body.brown #content .scene.column div.column div.filters li:first-child,
+body.brown #content .scene.column div.column div.sharing ul li,
+body.brown #content .scene.column div.article div.sharing ul li {border-color: #78644b;}
+
+body.brown #header .cropped,
+body.brown #content div.newsletter form ul.actions,
+body.brown #content div.social ul.social li.hover,
+body.brown #content div.offices ul.offices > li,
+body.brown #content .scene.work div.project ul.media li.text_box .text_mask,
+body.brown #content .scene.work div.project ul.sharing li.hover,
+body.brown #content .scene.work div.project div.sharing,
+body.brown #content .scene.expertise .service .text .vb,
+body.brown #content .scene.about ul.quotes li.i2 .vb,
+body.brown #content .scene.about ul.quotes li.i3 .vb,
+body.brown #content .scene.about ul.people li.person dl:before,
+body.brown #content .scene.about ul.people li.person dl dd.email.hover,
+body.brown #content .scene.about ul.people li.person dl dd.linkedin.hover,
+body.brown #content .scene.column div.column div.filters li.hover,
+body.brown #content .scene.column div.article div.sharing h4,
+body.brown #content .scene.column div.column div.sharing h4,
+body.brown #content .scene.column div.column div.sharing ul li.hover,
+body.brown #content .scene.column div.article div.sharing ul li.hover,
+body.brown #content .scene.column div.column div.filters li.selected {background-color: #78644b;}
+
+body.brown #intro *,
+body.brown #content *,
+body.brown #content div.newsletter form .actions.hover input,
+body.brown #content div.newsletter form .field input {color: #78644b;}
+
+body.brown #content .scene.work div.project ul.media li.video .info,
+body.brown #content .scene.expertise .video .info,
+body.brown #content .scene.about .video .info {background-color: rgba(120, 100, 75, 0.9);}
+
+body.brown #navigation ul.navigation li a,
+body.brown #content .scene.about ul.people li.person dl dd.email,
+body.brown #content .scene.about ul.people li.person dl dd.linkedin {border-color: #78644b; color: #78644b;}
+
+body.brown #content .scene.about ul.people li.person dl dd svg polygon,
+body.brown #content div.sharing ul.sharing li svg polygon,
+body.brown #content div.social svg polygon,
+body.brown #intro img svg * {fill: #78644b; stroke: #78644b;}
+body.brown #content div.fullstop svg circle,
+body.brown #content .scene.front .logo svg .logo_stroke {stroke: #78644b;}
+
+
+/* RED */
+body.red #navigation ul.navigation li:last-child a,
+body.red #navigation ul.navigation li:hover a span,
+body.red #content div.newsletter,
+body.red #content div.offices,
+body.red #content div.social ul.social li,
+body.red #content div.newsletter form input[type="text"],
+body.red #content div.newsletter form ul.actions,
+body.red #content .scene.work div.project,
+body.red #content .scene.work div.project div.sharing ul,
+body.red #content .scene.work div.project div.sharing ul li,
+body.red #content .scene.column div.column ul.columns li.item,
+body.red #content .scene.column div.column div.filters h2,
+body.red #content .scene.column div.column div.filters ul,
+body.red #content .scene.column div.column div.filters li,
+body.red #content .scene.column div.column div.filters li:first-child,
+body.red #content .scene.column div.column div.sharing ul li,
+body.red #content .scene.column div.article div.sharing ul li {border-color: #96190f;}
+
+body.red #header .cropped,
+body.red #content div.newsletter form ul.actions,
+body.red #content div.social ul.social li.hover,
+body.red #content div.offices ul.offices > li,
+body.red #content .scene.work div.project ul.media li.text_box .text_mask,
+body.red #content .scene.work div.project ul.sharing li.hover,
+body.red #content .scene.work div.project div.sharing,
+body.red #content .scene.expertise .service .text .vb,
+body.red #content .scene.about ul.quotes li.i2 .vb,
+body.red #content .scene.about ul.quotes li.i3 .vb,
+body.red #content .scene.about ul.people li.person dl:before,
+body.red #content .scene.about ul.people li.person dl dd.email.hover,
+body.red #content .scene.about ul.people li.person dl dd.linkedin.hover,
+body.red #content .scene.column div.column div.filters li.hover,
+body.red #content .scene.column div.article div.sharing h4,
+body.red #content .scene.column div.column div.sharing h4,
+body.red #content .scene.column div.column div.sharing ul li.hover,
+body.red #content .scene.column div.article div.sharing ul li.hover,
+body.red #content .scene.column div.column div.filters li.selected {background-color: #96190f;}
+
+body.red #intro *,
+body.red #content *,
+body.red #content div.newsletter form .actions.hover input,
+body.red #content div.newsletter form .field input {color: #96190f;}
+
+body.red #content .scene.work div.project ul.media li.video .info,
+body.red #content .scene.expertise .video .info,
+body.red #content .scene.about .video .info {background-color: rgba(150, 25, 15, 0.9);}
+
+body.red #navigation ul.navigation li a,
+body.red #content .scene.about ul.people li.person dl dd.email,
+body.red #content .scene.about ul.people li.person dl dd.linkedin {border-color: #96190f; color: #96190f;}
+
+body.red #content .scene.about ul.people li.person dl dd svg polygon,
+body.red #content div.sharing ul.sharing li svg polygon,
+body.red #content div.social svg polygon,
+body.red #intro img svg * {fill: #96190f; stroke: #96190f;}
+body.red #content div.fullstop svg circle,
+body.red #content .scene.front .logo svg .logo_stroke {stroke: #96190f;}

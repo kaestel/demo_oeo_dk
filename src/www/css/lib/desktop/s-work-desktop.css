@@ -1,0 +1,117 @@
+/* WORK */
+#content .scene.work {opacity: 0;}
+#content .scene.work .image,
+#content .scene.work ul.projects h2,
+#content .scene.work ul.projects p {
+	-webkit-transform: translate3d(0, 0, 0);
+}
+
+#content .scene.work h1 {display: none;}
+#content .scene.work ul.projects {text-align: left;}
+#content .scene.work ul.projects li {width: 49.5%; display: inline-block; vertical-align: top; padding-bottom: 70px; text-align: center; cursor: pointer;}
+#content .scene.work ul.projects li:nth-child(2n) {margin-left:1%;}
+#content .scene.work ul.projects li h2 {padding-top: 30px; padding-bottom: 20px; font-size: 22px; text-transform:uppercase;
+	font-family: "Primo Serif", Times, serif;
+}
+
+#content .scene.work ul.projects li .image {width: 100%; background-color: #d2d2d2; overflow: hidden;}
+#content .scene.work ul.projects li .image img {width: 100%; height: 100%; opacity: 0;}
+#content .scene.work ul.projects li .description {padding: 0 20px 10px;}
+
+#content .scene.work ul.projects li.hover h2 {text-decoration: underline;}
+
+
+/* SINGLE PROJECT */
+#content .scene.work div.project {border-bottom: 1px solid #d2d2d2; margin-bottom: 10px;}
+#content .scene.work div.project .grid {display: none;}
+
+#content .scene.work div.project > .image {background-color: #d2d2d2; text-indent: -9999px; position: relative; overflow: hidden;}
+#content .scene.work div.project > .image img {width: 100%;}
+#content .scene.work div.project > .image a {display: none;}
+
+
+#content .scene.work div.project div.sharing {position: relative; width: 140px; height: 33px; cursor: pointer;}
+#content .scene.work div.project div.sharing h4 {padding-top: 11px; height: 22px; text-align: center; font-size: 0;
+	font-weight:700;
+}
+#content .scene.work div.project div.sharing h4 span {display: inline-block; vertical-align: top; color: #ffffff; font-size: 10px; text-transform: uppercase; }
+#content .scene.work div.project div.sharing ul {position: absolute; width: 0; top:0; left: 140px; text-align: left; overflow: hidden;}
+#content .scene.work div.project div.sharing.hover ul {width:282px;}
+#content .scene.work div.project div.sharing ul li {position:relative; padding: 11px 0 10px; width:140px; height: 11px; text-align: center; cursor: pointer; font-size: 0; text-transform: uppercase; border-bottom: 1px solid #d2d2d2; border-right: 1px solid #d2d2d2;}
+#content .scene.work div.project div.sharing ul li:last-child {margin:-33px 0 0 140px;}
+#content .scene.work div.project div.sharing ul li.hover a {color: #ffffff;}
+#content .scene.work div.project div.sharing ul li a {display: inline-block; vertical-align: top; font-size: 10px;
+	font-weight:700;
+}
+
+
+
+#content .scene.work div.project h1 {display: block; padding-top: 40px; padding-bottom: 12px; font-size: 46px; text-transform: uppercase; 
+	font-family: "Primo Serif", Times, serif; font-weight: 400;
+}
+#content .scene.work div.project .description {width: 70%; margin: 0 auto;}
+#content .scene.work div.project .description h2 {font-size: 20px; padding-bottom: 62px; text-transform: uppercase;
+	font-family: "Primo Serif", Times, serif;
+}
+#content .scene.work div.project .description div p {font-size: 20px;}
+#content .scene.work div.project .description div.en {padding-bottom: 30px;}
+#content .scene.work div.project .description div.ja p {font-size: 16px;}
+
+#content .scene.work div.project > .scope,
+#content .scene.work div.project > .credits {display: none;}
+
+#content .scene.work div.project ul.grid {display: none;}
+#content .scene.work div.project ul.media > li {display: inline-block; vertical-align: top;}
+#content .scene.work div.project ul.media li > a {display: none;}
+#content .scene.work div.project ul.media li img {width: 100%;}
+
+/* center in grid - used for .text_box & .video */
+#content .scene.work div.project ul.media li .va {display: table; height: 100%; width: 100%; margin: 0; padding: 0; border: none; border-spacing: 0; border-collapse: collapse;}
+#content .scene.work div.project ul.media li .vb {display: table-cell; vertical-align: middle; text-align: center; padding: 0 15%;}
+
+#content .scene.work div.project ul.media li.i2 {width: 50%; overflow: hidden;}
+#content .scene.work div.project ul.media li.i2 .image_mask {margin-right: 5px;}
+#content .scene.work div.project ul.media li.i2 img+img {padding-top:10px;}
+
+#content .scene.work div.project ul.media li.text_box {width: 50%;}
+#content .scene.work div.project ul.media li.text_box .text_mask {margin-left: 5px; background: #ebebeb;}
+
+#content .scene.work div.project ul.media li.text_box * {color: #d2d2d2;}
+#content .scene.work div.project ul.media li.text_box h3 {font-size: 22px; padding-bottom: 20px;  text-transform: uppercase;
+	font-family: "Primo Serif", Times, serif;
+}
+#content .scene.work div.project ul.media li.text_box p {font-size: 20px;}
+#content .scene.work div.project ul.media li.text_box ul {padding-bottom:40px;}
+#content .scene.work div.project ul.media li.text_box ul li {display: block; font-size: 20px; padding-bottom:6px;}
+
+/* VIDEO */
+#content .scene.work div.project ul.media li.video {position: relative; margin: 10px 0 0 0; width: 100%; background: #d2d2d2;}
+#content .scene.work div.project ul.media li.video img {width: 100%; height: 100%;}
+#content .scene.work div.project ul.media li.video .info {position: absolute; width: 320px; top:10px; bottom: 10px; left: 0; right: 0; margin: 0 auto;}
+#content .scene.work div.project ul.media li.video .info dl dt {display: none;}
+#content .scene.work div.project ul.media li.video .info dl dd {color:#ebebeb; font-size: 22px; text-transform: uppercase; padding:0 40px;
+	font-family: "Primo Serif", Times, serif;
+}
+#content .scene.work div.project ul.media li.video .info dl dd.duration:before {content:"- \A"; white-space: pre;}
+#content .scene.work div.project ul.media li.video .info .play {height: 100px; width:100px; margin:40px auto; cursor: pointer;
+	background: url("/img/bn_play.svg") no-repeat; background-size: 100px 100px;
+}
+#content .scene.work div.project ul.media li.video .videoplayer {width: 100%;}
+#content .scene.work div.project ul.media li.video .videoplayer video {width: 100%; height: 100%; position: absolute; top: 0; left: 0; background: #ebebeb;}
+#content .scene.work div.project ul.media li.video .videoplayer .controls a {position: absolute; width: 40px; height: 40px; bottom: 20px; left:20px; cursor: pointer;}
+#content .scene.work div.project ul.media li.video .videoplayer.playing .controls a {
+	background: url("/img/bn_pause.svg") no-repeat; background-size: 40px 40px;
+}
+#content .scene.work div.project ul.media li.video .videoplayer.paused .controls a {
+	background: url("/img/bn_play.svg") no-repeat; background-size: 40px 40px;
+}
+
+#content .scene.work div.project ul.media li.i4 {width: 50%; margin-top: 10px;}
+#content .scene.work div.project ul.media li.i5 {width: 50%; margin-top: 10px;}
+#content .scene.work div.project ul.media li.i4 .image_mask {margin-right: 5px;}
+#content .scene.work div.project ul.media li.i5 .image_mask {margin-left: 5px;}
+
+#content .scene.work div.project .description .body1.ja {padding-bottom: 70px;}
+#content .scene.work div.project .description .body2.en {padding-top: 70px;}
+
+#content .scene.work div.project .image.i6 {margin-top: 40px;}

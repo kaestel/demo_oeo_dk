@@ -1,0 +1,98 @@
+/*
+
+white: 		#ebebeb;
+green: 		#0a2d26;
+green-rgba:	rgba(10, 45, 38, 0.9);
+
+*/
+
+
+#footer {}
+
+
+
+
+
+/* NEWSLETTER */
+#content div.newsletter {padding: 70px 0 70px; margin: 0 auto; border-top: 1px solid #0a2d26;}
+#content div.newsletter h4 {padding: 0 0 30px; font-size: 22px; text-transform:uppercase; font-family: "Primo Serif", Times, serif; color: #0a2d26;}
+#content div.newsletter form {width:100%; margin: 0 auto; font-size: 0; border:1px solid #0a2d26;}
+#content div.newsletter form .field {width:100%; display: inline-block; vertical-align: top;}
+#content div.newsletter form .field label {display: none;}
+#content div.newsletter form .field div.help {display: none;}
+#content div.newsletter form fieldset {font-size: 0; text-align: center;}
+#content div.newsletter form input {border:none; width:80%; padding:17px 0 13px; background: #ebebeb; font-size:12px; text-transform: uppercase; color: #0a2d26; text-align: center;}
+#content div.newsletter form input[type="text"] {border-top: 1px solid #0a2d26;}
+#content div.newsletter form ul {width: 100%; display: inline-block; vertical-align: top;}
+#content div.newsletter form ul li input[type="submit"] {background: #0a2d26; border:none; width: 100%; padding:17px 0 13px; color: #ffffff; font-size: 12px; cursor: pointer;}
+
+#content div.newsletter .receipt h2 {font-size: 18px; margin-top: -37px;
+	font-family: "Nationale", Arial, sans-serif;
+}
+
+
+/* Social */
+#content div.social {display: none;}
+
+
+
+/* SHARING */
+#content div.sharing {padding: 0 0 70px; width: 100%; margin: 0 auto; }
+#content div.sharing h4 {padding: 0 0 30px; font-size: 22px; text-transform:uppercase; font-family: "Primo Serif", Times, serif; color: #14372d;}
+#content div.sharing ul.sharing {text-align: center;}
+#content div.sharing ul.sharing li {display: inline-block; vertical-align: top; width:100%; margin-bottom:10px; padding: 17px 0 13px; cursor: pointer;
+	border:1px solid #14372d; text-transform: uppercase; font-size:12px;
+	-webkit-transition: all 0.15s ease-in;
+	-moz-transition: all 0.15s ease-in;
+	-o-transition: all 0.15s ease-in;
+	transition: all 0.15s ease-in;
+}
+#content div.sharing ul.sharing li.facebook {background-position: 128px 20px;}
+#content div.sharing ul.sharing li.instagram {background-position: 132px 20px;}
+#content div.sharing ul.sharing li.twitter {background-position: 120px 20px;}
+
+#content div.sharing ul.sharing li:active {background-color: #14372d; color:#ffffff;
+	-webkit-transform: scale(0.98, 0.98);
+	-moz-transform: scale(0.98, 0.98);
+	-o-transform: scale(0.98, 0.98);
+	transform: scale(0.98, 0.98);
+}
+
+
+/* OFFICES */
+#content div.offices {width: 100%; padding: 0 0 10px; border-bottom: 1px solid #14372d;}
+#content div.offices ul.offices {font-size: 0;}
+#content div.offices ul.offices * {color: #ebebeb}
+#content div.offices ul.offices > li {width:100%; display: inline-block; vertical-align: top; background-color: #14372d; padding-bottom:40px;}
+#content div.offices ul.offices > li img {width: 100%;}
+#content div.offices ul.offices > li h4 {padding: 60px 0 30px; font-size: 22px; text-transform:uppercase; font-family: "Primo Serif", Times, serif; color: #ffffff;}
+#content div.offices ul.offices li ul {padding-bottom:20px;}
+#content div.offices ul.offices li ul li {padding-bottom:4px;}
+#content div.offices ul.offices li dl {padding-bottom:20px;}
+#content div.offices ul.offices li dl dt {display: none;}
+#content div.offices ul.offices li dl dd {text-transform: none; padding-bottom:6px;}
+#content div.offices ul.offices li dl dd.email {font-weight: 700;}
+#content div.offices ul.offices li dl dd.email a:active {color:blue;}
+
+#content div.offices ul.offices li .map {}
+#content div.offices ul.offices li .map h5 {font-family: "Nationale", Times, serif; font-size:12px; font-weight: 700;}
+#content div.offices ul.offices li .map h5 a:active {color:blue;}
+#content div.offices ul.offices li .map dl {display: none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

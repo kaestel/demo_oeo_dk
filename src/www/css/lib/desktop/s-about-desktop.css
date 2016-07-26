@@ -1,0 +1,121 @@
+/* ABOUT - Colors & hover in seperate files */
+#content .scene.about {opacity: 0; padding: 30px 0 0;}
+
+#content .scene.about .description,
+#content .scene.about .image,
+#content .scene.about .video,
+#content .scene.about p,
+#content .scene.about .contact,
+#content .scene.about .quote {
+	-webkit-transform: translate3d(0, 0, 0);
+}
+
+#content .scene.about h1 {display: none;}
+#content .scene.about .en > p,
+#content .scene.about .ja > p {width: 70%; margin: 0 auto;}
+#content .scene.about .en > p {font-size: 20px;}
+#content .scene.about .ja > p {font-size: 16px;}
+#content .scene.about .en {padding-bottom: 30px;}
+
+
+/* VIDEO */
+#content .scene.about .video {position: relative; margin: 50px 0 70px; background-color:#d2d2d2; background-repeat: no-repeat; background-size: 100% auto; overflow: hidden;}
+#content .scene.about .video img {width: 101%; position: relative; left: -0.5%; top: 0;}
+#content .scene.about .video .info {position: absolute; width: 320px; top:10px; bottom:10px; left: 0; right: 0; margin:0 auto; z-index: 10;}
+#content .scene.about .video .info .va {display: table; height: 100%; width: 100%; margin: 0; padding: 0; border: none; border-spacing: 0; border-collapse: collapse;}
+#content .scene.about .video .info .vb {display: table-cell; vertical-align: middle; text-align: center;}
+
+#content .scene.about .video .info dl dt {display: none;}
+#content .scene.about .video .info dl dd {color:#ebebeb; font-size: 22px; text-transform: uppercase; padding:0 40px;
+	font-family: "Primo Serif", Times, serif;
+}
+#content .scene.about .video .info dl dd.duration:before {content:"- \A"; white-space:pre;}
+
+#content .scene.about .video .info .play {height: 100px; width:100px; margin:40px auto 0; cursor: pointer;
+	background: url("/img/bn_play.svg") no-repeat; background-size: 100px 100px;
+}
+#content .scene.about .video .videoplayer {width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 12;}
+#content .scene.about .video .videoplayer video {width: 101%; height: 100%; position: absolute; top: 0; left: -0.5%; background: #ebebeb;}
+#content .scene.about .video .videoplayer .controls a {position: absolute; width: 40px; height: 40px; bottom: 20px; left:20px; cursor: pointer;}
+#content .scene.about .video .videoplayer.playing .controls a {
+	background: url("/img/bn_pause.svg") no-repeat; background-size: 40px 40px;
+}
+#content .scene.about .video .videoplayer.paused .controls a {
+	background: url("/img/bn_play.svg") no-repeat; background-size: 40px 40px;
+}
+
+
+
+
+/* PEOPLE */
+#content .scene.about ul.people {font-size: 0; padding-top: 50px;}
+#content .scene.about ul.people li.person {width: 49.5%; display: inline-block; vertical-align: top; padding-bottom: 70px;}
+#content .scene.about ul.people li.person:nth-child(1) {margin-right:0.5%;}
+#content .scene.about ul.people li.person:nth-child(2) {margin-left:0.5%;}
+
+#content .scene.about ul.people li.person .image {background-color: #D2D2D2;}
+#content .scene.about ul.people li.person .image img {width: 100%;}
+#content .scene.about ul.people li.person .position {padding: 30px 0 0 0; font-size: 10px; text-transform: uppercase; 
+	font-family: "Nationale", Times, serif; font-weight: 600;
+}
+#content .scene.about ul.people li.person h2.name {padding: 20px 0; text-transform: uppercase; 
+	font-family: "Primo Serif", Times, serif;
+}
+#content .scene.about ul.people li.person .description {padding:0 30px;}
+#content .scene.about ul.people li.person .en p,
+#content .scene.about ul.people li.person .ja p {width: 100%; font-size: 1em;}
+#content .scene.about ul.people li.person .en {padding-bottom: 10px;}
+
+#content .scene.about ul.people li.person dl {position: relative; margin-top:10px;}
+#content .scene.about ul.people li.person dl:before {content: ""; position: absolute; left:50%; margin-left:-12px; width:24px; height:1px;}
+
+#content .scene.about ul.people li.person dl dt {display: none;}
+#content .scene.about ul.people li.person dl dt.telephone {padding:30px 0 20px; display: inline-block; vertical-align: top; text-transform: none; }
+#content .scene.about ul.people li.person dl dt.telephone:after {content: ":"; padding-right:5px;}
+#content .scene.about ul.people li.person dl dd.telephone {padding: 30px 0 20px; display: block; display: inline-block; vertical-align: top;}
+
+#content .scene.about ul.people li.person dl dd.email,
+#content .scene.about ul.people li.person dl dd.linkedin {padding: 14px 10px; width: 178px; margin: 10px auto; text-align: center; font-size: 12px; cursor: pointer; border: 1px solid #ebebeb;}
+#content .scene.about ul.people li.person dl dd.email.hover a,
+#content .scene.about ul.people li.person dl dd.linkedin.hover a {color: #ffffff;}
+
+#content .scene.about ul.people li.person dl dd a {display: inline-block; vertical-align: top;}
+#content .scene.about ul.people li.person dl dd svg {margin: 3px 0 0 10px; width: 10px; height: 10px; display: inline-block; vertical-align: top;}
+#content .scene.about ul.people li.person dl dd.hover a {color: #ffffff;}
+#content .scene.about ul.people li.person dl dd.hover svg polygon {fill: #ffffff; stroke: #ffffff;}
+
+
+#content .scene.about ul.quotes {padding-bottom: 10px;}
+#content .scene.about ul.quotes li {display: inline-block; vertical-align: top; width: 50%; overflow: hidden;}
+#content .scene.about ul.quotes li img {width: 100%;}
+#content .scene.about ul.quotes li.image .image {background-color: #D2D2D2;}
+#content .scene.about ul.quotes li.quote * {color:#ffffff;}
+#content .scene.about ul.quotes li.quote h3 {font-size: 22px; padding-bottom: 30px; text-transform: uppercase; 
+	font-family: "Primo Serif", Times, serif;
+}
+#content .scene.about ul.quotes li.quote p {font-size: 16px; padding-bottom: 30px; line-height: 1.375em;}
+#content .scene.about ul.quotes li.quote dl {}
+#content .scene.about ul.quotes li.quote dl dt {display: none;}
+#content .scene.about ul.quotes li.quote dl dd {width: 180px; margin:0 auto; font-size: 16px; text-transform: none; line-height: 1.3em;
+	font-family: "Nationale", Times, serif; font-weight: 400;
+}
+#content .scene.about ul.quotes li.quote dl dd.author {font-weight:700; text-transform: uppercase; padding-bottom:6px;}
+
+#content .scene.about ul.quotes li.quote .va {display: table; height: 100%; margin: 0; padding: 0; border: none; border-spacing: 0; border-collapse: collapse;}
+#content .scene.about ul.quotes li.quote .vb {display: table-cell; vertical-align: middle; text-align: center; padding: 0 15%;}
+
+/* quote grid */
+#content .scene.about ul.quotes li.i0 {width: 100%; margin-bottom: 10px;}
+#content .scene.about ul.quotes li.i1 .image {margin-right: 5px;}
+#content .scene.about ul.quotes li.i1 .image+.image {margin-top:10px;}
+#content .scene.about ul.quotes li.i2 .va {margin-left: 5px;}
+#content .scene.about ul.quotes li.i3 .va {margin-right: 5px; margin-top: 10px;}
+#content .scene.about ul.quotes li.i4 .image {margin-left: 5px; margin-top: 10px;}
+
+#content .scene.about ul.quotes li.i2,
+#content .scene.about ul.quotes li.i3 {width: 50%;}
+
+
+
+
+
