@@ -1,4 +1,4 @@
-<?php include_once($_SERVER["FRAMEWORK_PATH"]."/includes/segment.php") ?>
+<?php include_once($_SERVER["LOCAL_PATH"]."/includes/segment.php") ?>
 <!DOCTYPE html>
 <html lang="EN">
 <head>
