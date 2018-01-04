@@ -2,51 +2,63 @@ Util.browser = function(model, version) {
 
 	var current_version = false;
 
+	if(model.match(/\bedge\b/i)) {
+
+		if(navigator.userAgent.match(/Windows[^$]+Gecko[^$]+Edge\/(\d+.\d)/i)) {
+			current_version = navigator.userAgent.match(/Edge\/(\d+)/i)[1];
+		}
+	}
+
 	if(model.match(/\bexplorer\b|\bie\b/i)) {
 		// u.bug("##trying to match IE:" + document.all + ":" + window.ActiveXObject)
 		// u.bug(navigator.userAgent.match(/Trident\/[\d+]\.\d[^$]+rv:(\d+.\d)/i))
 
-		if(window.ActiveXObject && navigator.userAgent.match(/(MSIE )(\d+.\d)/i)) {
-			current_version = navigator.userAgent.match(/(MSIE )(\d+.\d)/i)[2];
+		if(window.ActiveXObject && navigator.userAgent.match(/MSIE (\d+.\d)/i)) {
+			current_version = navigator.userAgent.match(/MSIE (\d+.\d)/i)[1];
 		}
 		else if(navigator.userAgent.match(/Trident\/[\d+]\.\d[^$]+rv:(\d+.\d)/i)) {
 			current_version = navigator.userAgent.match(/Trident\/[\d+]\.\d[^$]+rv:(\d+.\d)/i)[1];
 		}
 	}
-	else if(model.match(/\bfirefox\b|\bgecko\b/i)) {
+	
+	if(model.match(/\bfirefox\b|\bgecko\b/i) && !u.browser("ie,edge")) {
 //		u.bug("##trying to match firefox")
-		if(window.navigator.mozIsLocallyAvailable) {
-			current_version = navigator.userAgent.match(/(Firefox\/)(\d+\.\d+)/i)[2];
+		if(navigator.userAgent.match(/Firefox\/(\d+\.\d+)/i)) {
+			current_version = navigator.userAgent.match(/Firefox\/(\d+\.\d+)/i)[1];
 		}
 	}
-	else if(model.match(/\bwebkit\b/i)) {
-//		u.bug("##trying to match webkit")
-		if(document.body.style.webkitTransform != undefined) {
-			current_version = navigator.userAgent.match(/(AppleWebKit\/)(\d+.\d)/i)[2];
+	
+	if(model.match(/\bwebkit\b/i)) {
+//		u.bug("##trying to match webkit:" + document.body.style.webkitTransform)
+		if(navigator.userAgent.match(/WebKit/i) && !u.browser("ie,edge")) {
+			current_version = navigator.userAgent.match(/AppleWebKit\/(\d+.\d)/i)[1];
 		}
 	}
-	else if(model.match(/\bchrome\b/i)) {
+	
+	if(model.match(/\bchrome\b/i)) {
 //		u.bug("##trying to match chrome")
-		if(window.chrome && document.body.style.webkitTransform != undefined) {
-			current_version = navigator.userAgent.match(/(Chrome\/)(\d+)(.\d)/i)[2];
+		if(window.chrome && !u.browser("ie,edge")) {
+			current_version = navigator.userAgent.match(/Chrome\/(\d+)(.\d)/i)[1];
 		}
 	}
-	else if(model.match(/\bsafari\b/i)) {
+	
+	if(model.match(/\bsafari\b/i)) {
 //		u.bug("##trying to match safari")
 		if(!window.chrome && document.body.style.webkitTransform != undefined && !u.browser("ie,edge,firefox")) {
-			current_version = navigator.userAgent.match(/(Version\/)(\d+)(.\d)/i)[2];
+			current_version = navigator.userAgent.match(/Version\/(\d+)(.\d)/i)[1];
 		}
 	}
-	else if(model.match(/\bopera\b/i)) {
+	
+	if(model.match(/\bopera\b/i)) {
 //		alert("##trying to match opera:" + navigator.userAgent + ", " + navigator.userAgent.match(/(Opera[\/ ]{1})(\d+)(.\d)/i))
 //		alert("window.opera:" + window.opera)
 		if(window.opera) {
 			if(navigator.userAgent.match(/Version\//)) {
-				current_version = navigator.userAgent.match(/(Version\/)(\d+)(.\d)/i)[2];
+				current_version = navigator.userAgent.match(/Version\/(\d+)(.\d)/i)[1];
 			}
 			// version 9 and less has oldschool useragent
 			else {
-				current_version = navigator.userAgent.match(/(Opera[\/ ]{1})(\d+)(.\d)/i)[2];
+				current_version = navigator.userAgent.match(/Opera[\/ ]{1}(\d+)(.\d)/i)[1];
 			}
 		}
 	}
