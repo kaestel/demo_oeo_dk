@@ -3119,7 +3119,7 @@ Util.browser = function(model, version) {
 		}
 	}
 	else if(model.match(/\bsafari\b/i)) {
-		if(!window.chrome && document.body.style.webkitTransform != undefined && !u.browser("ie,edge,firefox")) {) {
+		if(!window.chrome && document.body.style.webkitTransform != undefined && !u.browser("ie,edge,firefox")) {
 			current_version = navigator.userAgent.match(/(Version\/)(\d+)(.\d)/i)[2];
 		}
 	}
