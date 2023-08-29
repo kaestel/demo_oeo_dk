@@ -1,3 +1,0 @@
-[submodule "submodules/janitor"]
-	path = submodules/janitor
-	url = https://github.com/parentnode/janitor.git
